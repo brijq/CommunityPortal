@@ -5,9 +5,7 @@ use classes\business\UserManager;
 use classes\entity\User;
 
 ob_start();
-include '../../includes/security.php';
-
-$_SESSION['formerror']='';
+//include '../../includes/security.php';
 
 $name="";
 $password="";
