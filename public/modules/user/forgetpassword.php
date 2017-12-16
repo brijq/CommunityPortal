@@ -1,5 +1,83 @@
 <?php
 
+require_once '../../includes/autoload.php';
+
+use classes\business\UserManager;
+
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../../../PHPMailer/src/Exception.php';
+require '../../../PHPMailer/src/PHPMailer.php';
+require '../../../PHPMailer/src/SMTP.php';
+
+
+$email="";
+
+function randomPassword() {
+    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+    $pass = array(); //remember to declare $pass as an array
+    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+    for ($i = 0; $i < 8; $i++) {
+        $n = rand(0, $alphaLength);
+        $pass[] = $alphabet[$n];
+    }
+    return implode($pass); //turn the array into a string
+}
+
+if(isset($_REQUEST["submitted"])) {
+    $email = isset($_REQUEST["email"]) ? $_REQUEST["email"] : '';
+
+    $UM = new UserManager();
+
+
+    $existuser = $UM->getUserByEmail($email);
+    if (isset($existuser)) {
+
+        $randompassword = randomPassword();
+
+        $mail = new PHPMailer();
+        try {
+            $mail->IsSMTP();
+            $mail->Host = 'smtp.mailgun.org';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'postmaster@mailgun.taiyuan.com.sg';
+            $mail->Password = '5585dffec4722c40fbd39390e0765a20';
+            $mail->Port = '587';
+
+            //$mail->From = $_POST["email"];
+            $mail->From = 'noreply@communityportal.com';
+            $mail->FromName = 'CommunityPortal';
+            $mail->addAddress($email);
+            $mail->addReplyTo($email, 'Reply');
+
+            $mail->isHTML(true);
+            $mail->Subject = 'Forget Password Confirmation';
+            $mail->Body = 'This message is send from Community Portal <b> Your password is  !</b> <br/> 
+                            *** Please do not reply to this message as it is an auto generated message ***';
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+            if (!$mail->send()) {
+                echo 'Message could not be send';
+            } else {
+                echo 'Message has been send';
+            }
+        } catch (Exception $e){
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        }
+        print "An email have already been send, Please Check Your inbox.";
+        $_SESSION['email'] = $email;
+
+        $formerror = "An email have already been send, Please Check Your inbox.";
+        header("Location: login.php");
+    }else {
+        print "User does not exist . Please fill in an valid email address or Register First";
+        $formerror = "User does not exist . Please fill in an valid email address";
+    }
+}
 ?>
 
 
@@ -65,30 +143,34 @@
                 </div>
             </div>
 
-            <form>
+
+            <div><?=$formerror?></div>
+            <form name="myForm" method="post">
                 <div class="form-group">
+
                     <div class="col">
                         <div class="row">
                             <div class="col-lg-4">
-                                <label for="Email" style="margin-left: 40px">Username or Email</label>
+                                <label for="username">Email</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-lg-4">
-                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter username"  style="margin-bottom: 50px; margin-left: 50px; width:500px; height:48px">
+                                <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter username"  style="margin-bottom: 50px; margin-left: 50px; width:500px; height:48px">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-lg btn-primary" style="margin-bottom: 100px">Send</button>
+
+                <input type="hidden" name="submitted" value="1"><input type="submit" name="submit" value="Submit">
+                <input type="submit" name="clear" value="Clear Search" onclick="javascript:clearForm();">
 
             </form>
         </div>
     </div>
 </div>
-
 
 
 <!--Footer-->
@@ -99,17 +181,17 @@
             <i class="fa fa-5x fa-facebook-official" style="margin-right: 30px; color:#2b669a" ></i>
         </a>
 
-    <a href="#">
-        <i class="fa fa-5x fa-twitter" style="margin-right: 30px; color:#5cb3fd" ></i>
-    </a>
+        <a href="#">
+            <i class="fa fa-5x fa-twitter" style="margin-right: 30px; color:#5cb3fd" ></i>
+        </a>
 
-    <a href="#">
-        <i class="fa fa-5x fa-linkedin" style="margin-right: 30px; color:#025aa5"></i>
-    </a>
+        <a href="#">
+            <i class="fa fa-5x fa-linkedin" style="margin-right: 30px; color:#025aa5"></i>
+        </a>
 
-    <a href="#">
-        <i class="fa fa-5x fa-github" style="margin-right: 30px; color:#8c8c8c"></i>
-    </a>
+        <a href="#">
+            <i class="fa fa-5x fa-github" style="margin-right: 30px; color:#8c8c8c"></i>
+        </a>
 
     </div>
 
@@ -118,28 +200,18 @@
     </div>
 
     <div class="col-lg-4">
-    <form>
-    <div class="form-group">
-        <label for="exampleSelect1" style="color:#f9f9f9">Select Language</label>
-        <select class="form-control" id="exampleSelect1">
-            <option>English</option>
-            <option>Chinese</option>
-        </select>
-    </div>
-    </form>
+        <form>
+            <div class="form-group">
+                <label for="exampleSelect1" style="color:#f9f9f9">Select Language</label>
+                <select class="form-control" id="exampleSelect1">
+                    <option>English</option>
+                    <option>Chinese</option>
+                </select>
+            </div>
+        </form>
     </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
+}
