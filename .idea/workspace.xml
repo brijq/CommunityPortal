@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe8bf19-dcc3-452e-81b3-03f19dafe084" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/user/forgetpassword.php" afterPath="$PROJECT_DIR$/public/modules/user/forgetpassword.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +41,7 @@
           <file leaf-file-name="forgetpassword.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/modules/user/forgetpassword.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="791">
+                <state relative-caret-position="-150">
                   <caret line="66" column="31" lean-forward="true" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
                   <folding>
                     <element signature="e#52#85#0#PHP" expanded="true" />
@@ -353,12 +351,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512311709630</updated>
       <workItem from="1512311711112" duration="17000" />
-      <workItem from="1513094450263" duration="16390000" />
+      <workItem from="1513094450263" duration="16479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53265000" />
+    <option name="totallyTimeSpent" value="53354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -649,7 +647,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/modules/user/forgetpassword.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
+        <state relative-caret-position="-150">
           <caret line="66" column="31" lean-forward="true" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
           <folding>
             <element signature="e#52#85#0#PHP" expanded="true" />
