@@ -15,6 +15,9 @@ class UserManager
     public function getUserByEmail($email){
         return UserManagerDB::getUserByEmail($email);
     }
+    public function getUserByEmailReset($email){
+        return UserManagerDB::getUserByEmailReset($email);
+    }
     public function saveUser(User $user){
         UserManagerDB::saveUser($user);
     }

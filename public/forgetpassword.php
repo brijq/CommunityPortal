@@ -1,31 +1,21 @@
 <?php
 
-require_once '../../includes/autoload.php';
+require_once 'includes/autoload.php';
 
 use classes\business\UserManager;
+
 
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../../../PHPMailer/src/Exception.php';
-require '../../../PHPMailer/src/PHPMailer.php';
-require '../../../PHPMailer/src/SMTP.php';
+require '../PHPMailer/src/Exception.php';
+require '../PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/src/SMTP.php';
 
 
 $email="";
-
-function randomPassword() {
-    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-    $pass = array(); //remember to declare $pass as an array
-    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
-    for ($i = 0; $i < 8; $i++) {
-        $n = rand(0, $alphaLength);
-        $pass[] = $alphabet[$n];
-    }
-    return implode($pass); //turn the array into a string
-}
 
 if(isset($_REQUEST["submitted"])) {
     $email = isset($_REQUEST["email"]) ? $_REQUEST["email"] : '';
@@ -34,48 +24,66 @@ if(isset($_REQUEST["submitted"])) {
 
 
     $existuser = $UM->getUserByEmail($email);
+
     if (isset($existuser)) {
 
-        $randompassword = randomPassword();
+        $existingUser = $UM->getUserByEmailReset($email);
 
-        $mail = new PHPMailer();
-        try {
-            $mail->IsSMTP();
-            $mail->Host = 'smtp.mailgun.org';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'postmaster@mailgun.taiyuan.com.sg';
-            $mail->Password = '5585dffec4722c40fbd39390e0765a20';
-            $mail->Port = '587';
+        if ($existingUser["email"]) {
+            // Create a unique salt. This will never leave PHP unencrypted.
+            $salt = "498#2D83B631%3800EBD!801600D*7E3CC13";
 
-            //$mail->From = $_POST["email"];
-            $mail->From = 'noreply@communityportal.com';
-            $mail->FromName = 'CommunityPortal';
-            $mail->addAddress($email);
-            $mail->addReplyTo($email, 'Reply');
+            // Create the unique user password reset key
+            $password = hash('sha512', $salt . $existingUser["email"]);
 
-            $mail->isHTML(true);
-            $mail->Subject = 'Forget Password Confirmation';
-            $mail->Body = 'This message is send from Community Portal <b> Your password is  !</b> <br/> 
-                            *** Please do not reply to this message as it is an auto generated message ***';
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            // Create a url which we will direct them to reset their password
+            $pwrurl = "http://localhost:8080/CommunityPortal/public/reset_password.php?q=" . $password;
 
-            if (!$mail->send()) {
-                echo 'Message could not be send';
-            } else {
-                echo 'Message has been send';
+            // Mail them their key
+            $mailbody = "Dear user,\n\nIf this e-mail does not apply to you please ignore it. It appears that you have requested a password reset at our website www.yoursitehere.com\n\nTo reset your password, please click the link below. If you cannot click it, please paste it into your web browser's address bar.\n\n" . $pwrurl . "\n\nThanks,\nThe Administration";
+            mail($existingUser["email"], "CommunityPortal - Password Reset", $mailbody);
+            echo "Your password recovery key has been sent to your e-mail address.";
+
+            $mail = new PHPMailer();
+
+            try {
+                $mail->IsSMTP();
+                $mail->Host = 'smtp.mailgun.org';
+                $mail->SMTPAuth = true;
+                $mail->Username = 'postmaster@mailgun.taiyuan.com.sg';
+                $mail->Password = '5585dffec4722c40fbd39390e0765a20';
+                $mail->Port = '587';
+
+                //$mail->From = $_POST["email"];
+                $mail->From = 'noreply@communityportal.com';
+                $mail->FromName = 'CommunityPortal';
+                $mail->addAddress($email);
+                $mail->addReplyTo($email, 'Reply');
+
+                $mail->isHTML(true);
+                $mail->Subject = 'Forget Password Confirmation';
+                $mail->Body = $mailbody;
+
+                $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+                if (!$mail->send()) {
+                    echo 'Message could not be send';
+                } else {
+                    echo 'Message has been send';
+                }
+            } catch (Exception $e) {
+                echo 'Message could not be sent.';
+                echo 'Mailer Error: ' . $mail->ErrorInfo;
             }
-        } catch (Exception $e){
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
-        }
-        print "An email have already been send, Please Check Your inbox.";
-        $_SESSION['email'] = $email;
+            print "An email have already been send, Please Check Your inbox.";
+            $_SESSION['email'] = $email;
 
-        $formerror = "An email have already been send, Please Check Your inbox.";
-        header("Location: login.php");
-    }else {
-        print "User does not exist . Please fill in an valid email address or Register First";
-        $formerror = "User does not exist . Please fill in an valid email address";
+            $formerror = "An email have already been send, Please Check Your inbox.";
+            header("Location: reset_password.php");
+        } else {
+            print "User does not exist . Please fill in an valid email address or Register First";
+            $formerror = "User does not exist . Please fill in an valid email address";
+        }
     }
 }
 ?>
@@ -87,8 +95,8 @@ if(isset($_REQUEST["submitted"])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../css/bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
     <title>Developers Community-Design The Forget Password Page</title>
 </head>
 <body>
@@ -164,7 +172,7 @@ if(isset($_REQUEST["submitted"])) {
                 </div>
 
 
-                <input type="hidden" name="submitted" value="1"><input type="submit" name="submit" value="Submit">
+                <input type="hidden" name="submitted" value="1"><input type="submit" name="ForgotPassword" value="Request Reset Now">
                 <input type="submit" name="clear" value="Clear Search" onclick="javascript:clearForm();">
 
             </form>

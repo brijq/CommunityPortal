@@ -34,6 +34,7 @@ class UserManagerDB
         $conn->close();
         return $user;
     }
+
     public static function getUserByEmail($email){
         $user=NULL;
         $conn=DBUtil::getConnection();
@@ -49,6 +50,27 @@ class UserManagerDB
         $conn->close();
         return $user;
     }
+
+    public static function getUserByEmailReset($email){
+        $user=NULL;
+        $conn=DBUtil::getConnection();
+        $email=mysqli_real_escape_string($conn,$email);
+        $sql="SELECT email FROM tb_user WHERE email = '$email'";
+        $result = $conn->query($sql);
+
+        $userExists = $result->fetch_assoc();
+        /**
+        echo $result->num_rows;
+        if ($result->num_rows > 0) {
+            if($row = $result->fetch_assoc()){
+                $user=self::fillUser($row);
+            }
+        }
+        **/
+        $conn->close();
+        return $userExists;
+    }
+
     public static function saveUser(User $user){
         $conn=DBUtil::getConnection();
         $sql="call procSaveUser(?,?,?,?,?,?,?,?,?)";

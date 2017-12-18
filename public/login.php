@@ -153,7 +153,7 @@ if(isset($_REQUEST["submitted"])){
                             <input type="submit" name="clear" value="Clear Search" onclick="javascript:clearForm();">
 
                             <div class="form-group">
-                                <a href="modules/user/forgetpassword.php" style="margin-top: 50px">Forget Your Password? Click Here</a>
+                                <a href="forgetpassword.php" style="margin-top: 50px">Forget Your Password? Click Here</a>
                             </div>
                         </form>
                     </div>
