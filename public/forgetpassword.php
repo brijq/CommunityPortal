@@ -37,7 +37,7 @@ if(isset($_REQUEST["submitted"])) {
             $password = hash('sha512', $salt . $existingUser["email"]);
 
             // Create a url which we will direct them to reset their password
-            $pwrurl = "http://localhost:8080/CommunityPortal/public/reset_password.php?q=" . $password;
+            $pwrurl = "http://localhost:8080/CommunityPortal/public/reset_password.php?q=".$password;
 
             // Mail them their key
             $mailbody = "Dear user,\n\nIf this e-mail does not apply to you please ignore it. It appears that you have requested a password reset at our website www.yoursitehere.com\n\nTo reset your password, please click the link below. If you cannot click it, please paste it into your web browser's address bar.\n\n" . $pwrurl . "\n\nThanks,\nThe Administration";

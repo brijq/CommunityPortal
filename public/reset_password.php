@@ -1,5 +1,5 @@
 <?php echo '
-<form action="reset.php" method="POST">
+<form action="modules/reset/reset.php" method="POST">
     E-mail Address: <input type="text" name="email" size="20" /><br />
     New Password: <input type="password" name="password" size="20" /><br />
     Confirm Password: <input type="password" name="confirmpassword" size="20" /><br />

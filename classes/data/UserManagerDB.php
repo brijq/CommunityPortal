@@ -60,7 +60,7 @@ class UserManagerDB
 
         $userExists = $result->fetch_assoc();
         /**
-        echo $result->num_rows;
+        echo $result->num_rows;''
         if ($result->num_rows > 0) {
             if($row = $result->fetch_assoc()){
                 $user=self::fillUser($row);
