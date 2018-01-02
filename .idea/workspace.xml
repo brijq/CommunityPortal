@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe8bf19-dcc3-452e-81b3-03f19dafe084" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/communityportal.iml" afterPath="$PROJECT_DIR$/.idea/communityportal.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/forgetpassword.php" afterPath="$PROJECT_DIR$/public/forgetpassword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reset_password.php" afterPath="$PROJECT_DIR$/public/reset_password.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,7 +43,7 @@
             <entry file="file://$PROJECT_DIR$/public/reset_password.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="761">
-                  <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+                  <caret line="99" column="18" lean-forward="false" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
                   <folding>
                     <marker date="1514881803729" expanded="true" signature="45:2054" ph="..." />
                     <marker date="1514881803729" expanded="true" signature="52:302" ph="..." />
@@ -89,7 +88,7 @@
             <entry file="file://$PROJECT_DIR$/public/modules/reset/reset.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="570">
-                  <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+                  <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
                   <folding>
                     <marker date="1514017596075" expanded="true" signature="1367:1396" ph="UPDATE tb_us... " />
                     <marker date="1514017596075" expanded="true" signature="1367:1421" ph="UPDATE users... " />
@@ -104,7 +103,7 @@
             <entry file="file://$PROJECT_DIR$/config/config.ini">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
-                  <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="23" />
+                  <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -169,7 +168,7 @@
             <entry file="file://$PROJECT_DIR$/public/forgetpassword.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-5">
-                  <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+                  <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
                   <folding>
                     <element signature="e#46#79#0#PHP" expanded="true" />
                     <marker date="1514879563644" expanded="true" signature="3607:3626" ph="..." />
@@ -184,7 +183,7 @@
             <entry file="file://$PROJECT_DIR$/public/includes/autoload.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+                  <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -241,8 +240,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="151" />
-    <option name="y" value="80" />
+    <option name="x" value="298" />
+    <option name="y" value="34" />
     <option name="width" value="1077" />
     <option name="height" value="947" />
   </component>
@@ -380,15 +379,16 @@
       <workItem from="1512311711112" duration="17000" />
       <workItem from="1513094450263" duration="31539000" />
       <workItem from="1514184787883" duration="542000" />
-      <workItem from="1514194159864" duration="3064000" />
+      <workItem from="1514194159864" duration="3209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72020000" />
+    <option name="totallyTimeSpent" value="72165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13452381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -828,7 +828,7 @@
     <entry file="file://$PROJECT_DIR$/public/includes/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -836,7 +836,7 @@
     <entry file="file://$PROJECT_DIR$/public/forgetpassword.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#46#79#0#PHP" expanded="true" />
             <marker date="1514879563644" expanded="true" signature="3607:3626" ph="..." />
@@ -882,7 +882,7 @@
     <entry file="file://$PROJECT_DIR$/config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="23" />
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -890,7 +890,7 @@
     <entry file="file://$PROJECT_DIR$/public/modules/reset/reset.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <marker date="1514017596075" expanded="true" signature="1367:1396" ph="UPDATE tb_us... " />
             <marker date="1514017596075" expanded="true" signature="1367:1421" ph="UPDATE users... " />
@@ -913,7 +913,7 @@
     <entry file="file://$PROJECT_DIR$/public/reset_password.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="761">
-          <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+          <caret line="99" column="18" lean-forward="false" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
           <folding>
             <marker date="1514881803729" expanded="true" signature="45:2054" ph="..." />
             <marker date="1514881803729" expanded="true" signature="52:302" ph="..." />
