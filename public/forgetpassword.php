@@ -14,6 +14,7 @@ require '../PHPMailer/src/Exception.php';
 require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
 
+$formerror="";
 
 $email="";
 
@@ -68,8 +69,11 @@ if(isset($_REQUEST["submitted"])) {
 
                 if (!$mail->send()) {
                     echo 'Message could not be send';
+                    //$formerror = 'Message could not be send';
                 } else {
                     echo 'Message has been send';
+                    //$formerror = 'Message has been send';
+
                 }
             } catch (Exception $e) {
                 echo 'Message could not be sent.';
