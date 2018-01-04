@@ -2,8 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe8bf19-dcc3-452e-81b3-03f19dafe084" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/communityportal.iml" afterPath="$PROJECT_DIR$/.idea/communityportal.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/bootstrap-combined.no-icons.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/jquery.iviewer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/Read Me.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.dev.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/lte-ie7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/prism.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/template.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/forgetpassword.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/home.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/includes/autoload.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/includes/header.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/logout.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/modules/reset/reset.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/modules/user/register.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/modules/user/thankyou.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/modules/user/update.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/reset_password.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/graphs/classes.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/apple-touch-icon-114x114.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/apple-touch-icon-72x72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/custom-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/hierarchy-item.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-class-13x13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-class.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-interface-13x13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-interface.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-trait-13x13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-trait.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/grab.cur" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/hand.cur" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.rotate_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.rotate_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.zoom_fit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.zoom_in.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.zoom_out.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.zoom_zero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/html5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery-1.11.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.dotdotdot-1.5.9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.dotdotdot-1.5.9.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.iviewer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.smooth-scroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/prism.min.js" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -385,10 +441,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72351000" />
+    <option name="totallyTimeSpent" value="72431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13452381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
