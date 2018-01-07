@@ -2,64 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe8bf19-dcc3-452e-81b3-03f19dafe084" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/bootstrap-combined.no-icons.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/jquery.iviewer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/Read Me.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.dev.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/lte-ie7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/phpdocumentor-clean-icons/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/prism.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/css/template.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/forgetpassword.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/home.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/includes/autoload.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/includes/header.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/logout.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/modules/reset/reset.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/modules/user/register.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/modules/user/thankyou.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/modules/user/update.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/files/reset_password.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/font/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/graphs/classes.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/apple-touch-icon-114x114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/apple-touch-icon-72x72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/custom-icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/hierarchy-item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-class-13x13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-class.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-interface-13x13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-interface.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-trait-13x13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/icon-trait.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/grab.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/hand.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.rotate_left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.rotate_right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.zoom_fit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.zoom_in.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.zoom_out.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/images/iviewer/iviewer.zoom_zero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/html5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery-1.11.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.dotdotdot-1.5.9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.dotdotdot-1.5.9.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.iviewer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.mousewheel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/jquery.smooth-scroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/js/prism.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,7 +29,7 @@
           <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-655">
+                <state relative-caret-position="90">
                   <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
                   <folding>
                     <element signature="e#51#84#0#PHP" expanded="true" />
@@ -95,7 +38,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserManager.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="UserManager.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/classes/business/UserManager.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="360">
@@ -105,11 +48,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="reset_password.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="reset_password.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/reset_password.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="761">
-                  <caret line="99" column="18" lean-forward="false" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+                <state relative-caret-position="-502">
+                  <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
                   <folding>
                     <marker date="1514881803729" expanded="true" signature="45:2054" ph="..." />
                     <marker date="1514881803729" expanded="true" signature="52:302" ph="..." />
@@ -178,7 +121,7 @@
           <file leaf-file-name="CommunityPortal.sql" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CommunityPortal.sql">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="678">
+                <state relative-caret-position="780">
                   <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
                   <folding />
                 </state>
@@ -192,7 +135,7 @@
           <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/modules/user/register.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-607">
+                <state relative-caret-position="2085">
                   <caret line="141" column="11" lean-forward="false" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="34" />
                   <folding>
                     <element signature="e#68#92#0#PHP" expanded="true" />
@@ -214,7 +157,7 @@
           <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/home.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1792">
+                <state relative-caret-position="20">
                   <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
                   <folding />
                 </state>
@@ -224,7 +167,7 @@
           <file leaf-file-name="forgetpassword.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/forgetpassword.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-5">
+                <state relative-caret-position="525">
                   <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
                   <folding>
                     <element signature="e#46#79#0#PHP" expanded="true" />
@@ -297,10 +240,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="298" />
-    <option name="y" value="34" />
-    <option name="width" value="1077" />
-    <option name="height" value="947" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -318,7 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -327,69 +267,11 @@
               <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="business" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="util" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="reset" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,15 +319,18 @@
       <workItem from="1513094450263" duration="31539000" />
       <workItem from="1514184787883" duration="542000" />
       <workItem from="1514194159864" duration="3209000" />
+      <workItem from="1515122167636" duration="547000" />
+      <workItem from="1515206344996" duration="449000" />
+      <workItem from="1515262838960" duration="488000" />
+      <workItem from="1515295819386" duration="1323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72431000" />
+    <option name="totallyTimeSpent" value="75238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13452381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -458,22 +343,12 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1430193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13452381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1430193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -726,14 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1792">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/modules/user/thankyou.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -763,14 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/business/UserManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/includes/security.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -787,7 +646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-655">
+        <state relative-caret-position="90">
           <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding>
             <element signature="e#51#84#0#PHP" expanded="true" />
@@ -805,23 +664,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHPMailer/examples/gmail.phps" />
     <entry file="file://$PROJECT_DIR$/PHPMailer/examples/simple_contact_form.phps" />
-    <entry file="file://$PROJECT_DIR$/public/includes/autoload.php">
+    <entry file="file://$PROJECT_DIR$/classes/data/UserManagerDB.php" />
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/forgetpassword.php">
+    <entry file="file://$PROJECT_DIR$/CommunityPortal.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="780">
+          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/business/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/user/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="141" column="11" lean-forward="false" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="34" />
           <folding>
-            <element signature="e#46#79#0#PHP" expanded="true" />
-            <marker date="1514879563644" expanded="true" signature="3607:3626" ph="..." />
-            <marker date="1514879563644" expanded="true" signature="3878:3915" ph="..." />
-            <marker date="1514879563644" expanded="true" signature="3878:6949" ph="..." />
+            <element signature="e#68#92#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -834,19 +707,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/data/UserManagerDB.php" />
-    <entry file="file://$PROJECT_DIR$/CommunityPortal.sql">
+    <entry file="file://$PROJECT_DIR$/public/forgetpassword.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        <state relative-caret-position="525">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#46#79#0#PHP" expanded="true" />
+            <marker date="1514879563644" expanded="true" signature="3607:3626" ph="..." />
+            <marker date="1514879563644" expanded="true" signature="3878:3915" ph="..." />
+            <marker date="1514879563644" expanded="true" signature="3878:6949" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.ini">
+    <entry file="file://$PROJECT_DIR$/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="20">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -864,20 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/modules/user/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-607">
-          <caret line="141" column="11" lean-forward="false" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="34" />
-          <folding>
-            <element signature="e#68#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/reset_password.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="99" column="18" lean-forward="false" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+        <state relative-caret-position="-502">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
             <marker date="1514881803729" expanded="true" signature="45:2054" ph="..." />
             <marker date="1514881803729" expanded="true" signature="52:302" ph="..." />
