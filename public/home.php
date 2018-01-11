@@ -1,12 +1,15 @@
 <?php
+/**
+ * This page is my home page which includes feeds news from the Entire Portal
+ */
     include("../config/config.ini");
 ?>
                 <!DOCTYPE html>
                 <html lang="en">
                 <head>
                     <meta charset="UTF-8">
-                    <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.css">
-                    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+                    <link rel="stylesheet" href="./css/bootstrap-3.3.7-dist/css/bootstrap.css">
+                    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
                     <title>Developers Community-Home Page</title>
                 </head>
                 <body>

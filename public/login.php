@@ -1,16 +1,15 @@
 <?php
 
+/**
+ * This is the login page
+ */
+
 require_once 'includes/autoload.php';
 use classes\business\UserManager;
 
 //$path = str_replace("classes\business\UserManager","classes/business/UserManager");
 
 //include '../classes/business/UserManager.php';
-
-
-
-
-
 
 $formerror="";
 
@@ -20,12 +19,17 @@ $password="";
 $email_err = "";
 $password_err = "";
 
+/**
+ * @params string $email
+ * @params string $password
+ * This logic belows includes the validation of inputs with the requirements and followed by the backend filter with
+ * database and will then carry out the necessary authorisation if username and password is valid.
+ */
 if(isset($_REQUEST["submitted"])){
     $email=isset($_REQUEST["email"]) ? $_REQUEST["email"] : '';
     $password=isset($_REQUEST["password"]) ? $_REQUEST["password"] : '';
 
     $UM=new UserManager();
-
 
 
     // Validate password

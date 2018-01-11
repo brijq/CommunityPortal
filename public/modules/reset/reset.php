@@ -19,15 +19,12 @@
         // Gather the post data
         $email = $_POST["email"];
         $password = $_POST["password"];
+
+        echo $password;
+
         $confirmpassword = $_POST["confirmpassword"];
 
-        echo $email;
-        echo $password;
-        echo $confirmpassword;
-
         $hash = $_POST["q"];
-
-        echo $hash;
 
         // Use the same salt from the forgot_password.php file
         $salt = "498#2D83B631%3800EBD!801600D*7E3CC13";
