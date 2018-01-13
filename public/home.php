@@ -49,6 +49,7 @@
                             <li class="active"><a href="#">About Us</a></li>
                             <li><a href="#">Whats New!</a></li>
                             <li><a href="#">Create Topics</a></li>
+                            <li><<a href="logout.php">Logout</a></li>
                         </ul>
                     </div>
                 </nav>
