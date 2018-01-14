@@ -97,6 +97,21 @@ class UserManagerDB
         $conn->close();
         return $users;
     }
+
+    public static function getAllMessages(){
+        $messages[]=array();
+        $conn=DBUtil::getConnection();
+        $sql="select * from TB_MESSAGE";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()){
+                $messages=self::fillUser($row);
+                $messages[]=$messages;
+            }
+        }
+        $conn->close();
+        return $messages;
+    }
 }
 
 ?>

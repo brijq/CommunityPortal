@@ -31,7 +31,6 @@ if(isset($_REQUEST["submitted"])){
 
     $UM=new UserManager();
 
-
     // Validate password
     if(empty($_REQUEST['password'])){
         $password_err = "Please enter a password.";
@@ -40,9 +39,6 @@ if(isset($_REQUEST["submitted"])){
     } else{
         $password = trim($_REQUEST['password']);
     }
-
-    echo $email;
-    echo $password;
 
     $existuser=$UM->getUserByEmailPassword($email,$password);
     if(isset($existuser)){

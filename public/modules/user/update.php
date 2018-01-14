@@ -4,18 +4,20 @@ require_once '../../includes/autoload.php';
 use classes\business\UserManager;
 use classes\entity\User;
 
+//session_start();
 ob_start();
-//include '../../includes/security.php';
+include '../../includes/security.php';
 
+$formerror="";
 $name="";
 $password="";
 //$confirmpassword="";
 $email="";
-$age='';
-$mobilenumber='';
-$country='';
-$city='';
-$address='';
+$age="";
+$mobilenumber="";
+$country="";
+$city="";
+$address="";
 
 if(!isset($_REQUEST["submitted"])){
     $UM=new UserManager();
@@ -28,41 +30,29 @@ if(!isset($_REQUEST["submitted"])){
     $country=$existuser->country;
     $city=$existuser->city;
     $address=$existuser->address;
-
-    echo $name;
-    echo $email;
-    echo $password;
-    echo $age;
-    echo $mobilenumber;
-    echo $country;
-    echo $city;
-    echo $address;
-
 }else{
-    $userName=$_REQUEST["name"];
+    $name=$_REQUEST["name"];
     $email=$_REQUEST["email"];
     $password=$_REQUEST["password"];
-    $email=$_REQUEST["email"];
     $age=$_REQUEST["age"];
     $mobilenumber=$_REQUEST["mobilenumber"];
     $country=$_REQUEST["country"];
     $city=$_REQUEST["city"];
     $address=$_REQUEST["address"];
 
-
-
-    if($userName!='' && $email!='' && $password!='' && $age!="" && $mobilenumber!="" && $country!="" && $city!="" && $address!=""){
+    if($name!='' && $email!='' && $password!='' && $age!="" && $mobilenumber!="" && $country!="" && $city!="" && $address!=""){
         $update=true;
         $UM=new UserManager();
         if($email!=$_SESSION["email"]){
             $existuser=$UM->getUserByEmail($email);
-            if(is_null($existuser)==false){
+            echo $email;
+            if(isset($existuser)==false){
                 $formerror="User Email already in use, unable to update email";
                 $update=false;
             }
         }
-        if($update){
-            $existuser=$UM->getUserByEmail($_SESSION["email"]);
+        if($update=true){
+            $existuser=$UM->getUserByEmail($email);
             $existuser->name=$name;
             $existuser->email=$email;
             $existuser->password=$password;
@@ -72,7 +62,7 @@ if(!isset($_REQUEST["submitted"])){
             $existuser->city=$city;
             $existuser->address=$address;
             $UM->saveUser($existuser);
-            //$_SESSION["email"]=$email;
+            $_SESSION["email"]=$email;
             header("Location:../../home.php");
         }
     }else{
@@ -207,7 +197,9 @@ if(!isset($_REQUEST["submitted"])){
                             <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="address" id="address"  required>
                         </div>
 
-                        <input type="hidden" name="submitted" value="1"><input type="submit" name="submit" value="Submit">
+                        <input type="hidden" name="submitted" value="1"><input name="update" type="submit" id="update" value="Update">
+
+
                         <input type="submit" name="clear" value="Clear Search" onclick="javascript:clearForm();">
                     </div>
                 </div>

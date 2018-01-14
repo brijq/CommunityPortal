@@ -2,77 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe8bf19-dcc3-452e-81b3-03f19dafe084" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/modules/Messages/readmessages.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Command.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Command.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.Adapter.Silex.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.Adapter.Silex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.Adapter.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.Adapter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Provider.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Provider.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Tests.Command.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Tests.Command.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Tests.Provider.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Tests.Provider.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Tests.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpCollection.ObjectBasicsHandler.html" afterPath="$PROJECT_DIR$/namespaces/PhpCollection.ObjectBasicsHandler.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpCollection.Tests.html" afterPath="$PROJECT_DIR$/namespaces/PhpCollection.Tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpCollection.html" afterPath="$PROJECT_DIR$/namespaces/PhpCollection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpOption.Tests.html" afterPath="$PROJECT_DIR$/namespaces/PhpOption.Tests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpOption.html" afterPath="$PROJECT_DIR$/namespaces/PhpOption.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Builder.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Builder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Comment.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Comment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Lexer.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Lexer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.AssignOp.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.AssignOp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.BinaryOp.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.BinaryOp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.Cast.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.Cast.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Name.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Name.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Scalar.MagicConst.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Scalar.MagicConst.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Scalar.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Scalar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Stmt.TraitUseAdaptation.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Stmt.TraitUseAdaptation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Stmt.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Stmt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.NodeVisitor.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.NodeVisitor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.PrettyPrinter.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.PrettyPrinter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Serializer.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Serializer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Unserializer.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Unserializer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Seld.JsonLint.html" afterPath="$PROJECT_DIR$/namespaces/Seld.JsonLint.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Seld.html" afterPath="$PROJECT_DIR$/namespaces/Seld.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.Exception.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.Processor.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.Processor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.Reader.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.Reader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.Writer.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.Writer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Exception.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Filter.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.Loader.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.Loader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.Plural.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.Plural.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Validator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Validator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.View.Helper.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.View.Helper.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.View.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.View.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Serializer.Adapter.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Serializer.Adapter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Serializer.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Serializer.Exception.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Serializer.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Serializer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Di.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Di.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Exception.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Factory.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Factory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Proxy.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Proxy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Test.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.html" afterPath="$PROJECT_DIR$/namespaces/Zend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/ZendBench.ServiceManager.BenchAsset.html" afterPath="$PROJECT_DIR$/namespaces/ZendBench.ServiceManager.BenchAsset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/ZendBench.ServiceManager.html" afterPath="$PROJECT_DIR$/namespaces/ZendBench.ServiceManager.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/ZendBench.html" afterPath="$PROJECT_DIR$/namespaces/ZendBench.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.business.html" afterPath="$PROJECT_DIR$/namespaces/classes.business.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.data.html" afterPath="$PROJECT_DIR$/namespaces/classes.data.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.entity.html" afterPath="$PROJECT_DIR$/namespaces/classes.entity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.html" afterPath="$PROJECT_DIR$/namespaces/classes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.util.html" afterPath="$PROJECT_DIR$/namespaces/classes.util.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/default.html" afterPath="$PROJECT_DIR$/namespaces/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/data/UserManagerDB.php" afterPath="$PROJECT_DIR$/classes/data/UserManagerDB.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/home.php" afterPath="$PROJECT_DIR$/public/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/login.php" afterPath="$PROJECT_DIR$/public/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/user/update.php" afterPath="$PROJECT_DIR$/public/modules/user/update.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,20 +28,97 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <element signature="e#51#84#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="397">
+                  <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#51#84#0#PHP" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="readmessages.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/modules/Messages/readmessages.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+                  <folding>
+                    <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/home.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="594">
+                  <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserManagerDB.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/classes/data/UserManagerDB.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="863">
+                  <caret line="116" column="2" lean-forward="true" selection-start-line="116" selection-start-column="2" selection-end-line="116" selection-end-column="2" />
+                  <folding>
+                    <marker date="1515940671639" expanded="true" signature="806:873" ph="select * fro... tb_user" />
+                    <marker date="1515940671639" expanded="true" signature="1299:1341" ph="select * fro... tb_user" />
+                    <marker date="1515940671639" expanded="true" signature="1804:1852" ph="SELECT email... tb_user" />
+                    <marker date="1515940671639" expanded="true" signature="2843:2864" ph="select * fro... TB_USER" />
+                    <marker date="1515940671639" expanded="true" signature="3273:3297" ph="select * fro... TB_MESSAGE" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/modules/user/register.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="43" />
+                  <folding>
+                    <element signature="e#68#92#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/login.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="493">
+                  <caret line="145" column="46" lean-forward="true" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
+                  <folding>
+                    <element signature="e#7#40#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -132,20 +144,21 @@
         <option value="$PROJECT_DIR$/CommunityPortal.sql" />
         <option value="$PROJECT_DIR$/public/modules/user/register.php" />
         <option value="$PROJECT_DIR$/public/includes/security.php" />
-        <option value="$PROJECT_DIR$/public/modules/user/update.php" />
         <option value="$PROJECT_DIR$/PHPMailer/src/PHPMailer.php" />
         <option value="$PROJECT_DIR$/public/modules/user/forgetpassword.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/classes/reset/change.php" />
         <option value="$PROJECT_DIR$/classes/business/UserManager.php" />
         <option value="$PROJECT_DIR$/classes/business/UserManager.php" />
-        <option value="$PROJECT_DIR$/classes/data/UserManagerDB.php" />
         <option value="$PROJECT_DIR$/public/reset_password.php" />
         <option value="$PROJECT_DIR$/public/forgetpassword.php" />
         <option value="$PROJECT_DIR$/public/modules/reset/reset.php" />
-        <option value="$PROJECT_DIR$/public/login.php" />
         <option value="$PROJECT_DIR$/public/logout.php" />
         <option value="$PROJECT_DIR$/public/home.php" />
+        <option value="$PROJECT_DIR$/public/login.php" />
+        <option value="$PROJECT_DIR$/public/modules/user/update.php" />
+        <option value="$PROJECT_DIR$/classes/data/UserManagerDB.php" />
+        <option value="$PROJECT_DIR$/public/modules/Messages/readmessages.php" />
       </list>
     </option>
   </component>
@@ -157,8 +170,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="197" />
+    <option name="y" value="23" />
+    <option name="width" value="838" />
+    <option name="height" value="951" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -186,6 +201,23 @@
             <path>
               <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -205,7 +237,7 @@
               <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="reset" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -272,12 +304,12 @@
       <workItem from="1515637228702" duration="162000" />
       <workItem from="1515669652913" duration="6458000" />
       <workItem from="1515730232857" duration="279000" />
-      <workItem from="1515813474913" duration="1079000" />
+      <workItem from="1515813474913" duration="9387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86489000" />
+    <option name="totallyTimeSpent" value="94797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -318,16 +350,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/modules/user/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="e#68#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -366,6 +388,13 @@
           <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding>
             <element signature="e#51#84#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -453,6 +482,13 @@
           <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="e#51#84#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,19 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/data/UserManagerDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1514989927120" expanded="true" signature="806:873" ph="select * fro... tb_user" />
-            <marker date="1514989927120" expanded="true" signature="1299:1341" ph="select * fro... tb_user" />
-            <marker date="1514989927120" expanded="true" signature="1804:1852" ph="SELECT email... tb_user" />
-            <marker date="1514989927120" expanded="true" signature="2843:2864" ph="select * fro... TB_USER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/business/UserManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -623,26 +646,8 @@
         <state relative-caret-position="150">
           <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
-            <element signature="e#6#63#0#PHP" expanded="true" />
+            <element signature="e#6#63#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
-          <folding>
-            <element signature="e#7#40#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,10 +672,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="145" column="46" lean-forward="true" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
+          <folding>
+            <element signature="e#7#40#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/data/UserManagerDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="863">
+          <caret line="116" column="2" lean-forward="true" selection-start-line="116" selection-start-column="2" selection-end-line="116" selection-end-column="2" />
+          <folding>
+            <marker date="1515940671639" expanded="true" signature="806:873" ph="select * fro... tb_user" />
+            <marker date="1515940671639" expanded="true" signature="1299:1341" ph="select * fro... tb_user" />
+            <marker date="1515940671639" expanded="true" signature="1804:1852" ph="SELECT email... tb_user" />
+            <marker date="1515940671639" expanded="true" signature="2843:2864" ph="select * fro... TB_USER" />
+            <marker date="1515940671639" expanded="true" signature="3273:3297" ph="select * fro... TB_MESSAGE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/modules/user/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-607">
-          <caret line="141" column="11" lean-forward="false" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="34" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="43" />
           <folding>
             <element signature="e#68#92#0#PHP" expanded="true" />
           </folding>
@@ -679,10 +716,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="397">
+          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
           <folding>
             <element signature="e#51#84#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/Messages/readmessages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
