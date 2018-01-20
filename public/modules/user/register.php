@@ -117,7 +117,8 @@ if(isset($_REQUEST["submitted"])){
 <div class="container">
     <div class="row">
         <form name="myForm" method="post" class="form-group" action="register.php">
-            <div><?=$_SESSION['formerror']?></div>
+            <?php if(isset($formerror)){ ?><div class="alert alert-success" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
+            <?php if(isset($formerror)){ ?><div class="alert alert-danger" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
             <div class="col">
                 <h1> Sign Up Now And Join Our Largest Network Across More than 100,000 Connections All Over The World</h1>
             </div>

@@ -1,74 +1,31 @@
 <?php
-require_once '../../includes/autoload.php';
+require_once ('../../../classes/util/connect.php');
+    $id = $_GET['id'];
+    $SelSql = "SELECT * FROM `tb_user` WHERE id = $id";
+    $res = mysqli_query($connection, $SelSql);
+    $r = mysqli_fetch_assoc($res);
 
-use classes\business\UserManager;
-use classes\entity\User;
 
-//session_start();
-ob_start();
-include '../../includes/security.php';
+    if(!isset($_POST) & !empty($_POST)){
+        $name= mysqli_real_escape_string($connection, $_POST['name']);
+        $email=mysqli_real_escape_string($connection, $_POST['email']);
+        $password=mysqli_real_escape_string($connection, $_POST['password']);
+        $age=mysqli_real_escape_string($connection, $_POST['age']);
+        $mobilenumber=mysqli_real_escape_string($connection, $_POST['mobilenumber']);
+        $country=mysqli_real_escape_string($connection, $_POST['country']);
+        $city=mysqli_real_escape_string($connection, $_POST['city']);
+        $address=mysqli_real_escape_string($connection, $_POST['address']);
 
-$formerror="";
-$name="";
-$password="";
-//$confirmpassword="";
-$email="";
-$age="";
-$mobilenumber="";
-$country="";
-$city="";
-$address="";
 
-if(!isset($_REQUEST["submitted"])){
-    $UM=new UserManager();
-    $existuser=$UM->getUserByEmail($_SESSION["email"]);
-    $name=$existuser->name;
-    $email=$existuser->email;
-    $password=$existuser->password;
-    $age=$existuser->age;
-    $mobilenumber=$existuser->mobilenumber;
-    $country=$existuser->country;
-    $city=$existuser->city;
-    $address=$existuser->address;
-}else{
-    $name=$_REQUEST["name"];
-    $email=$_REQUEST["email"];
-    $password=$_REQUEST["password"];
-    $age=$_REQUEST["age"];
-    $mobilenumber=$_REQUEST["mobilenumber"];
-    $country=$_REQUEST["country"];
-    $city=$_REQUEST["city"];
-    $address=$_REQUEST["address"];
-
-    if($name!='' && $email!='' && $password!='' && $age!="" && $mobilenumber!="" && $country!="" && $city!="" && $address!=""){
-        $update=true;
-        $UM=new UserManager();
-        if($email!=$_SESSION["email"]){
-            $existuser=$UM->getUserByEmail($email);
-            echo $email;
-            if(isset($existuser)==false){
-                $formerror="User Email already in use, unable to update email";
-                $update=false;
-            }
+        $UpdateSql = "UPDATE 'tb_user' SET name = '$name', email = '$email', password = '$password',age = '$age', mobilenumber = '$mobilenumber',country='$country',city='$city', address = '$address' WHERE $id";
+        $res = mysqli_query($connection , $CreateSql);
+        if ($res){
+            echo 'Successfully inserted data';
+        }else{
+            echo "failed to insert data";
         }
-        if($update=true){
-            $existuser=$UM->getUserByEmail($email);
-            $existuser->name=$name;
-            $existuser->email=$email;
-            $existuser->password=$password;
-            $existuser->age=$age;
-            $existuser->mobilenumber=$mobilenumber;
-            $existuser->country=$country;
-            $existuser->city=$city;
-            $existuser->address=$address;
-            $UM->saveUser($existuser);
-            $_SESSION["email"]=$email;
-            header("Location:../../home.php");
-        }
-    }else{
-        $formerror="Please provide required values";
-    }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -141,19 +98,19 @@ if(!isset($_REQUEST["submitted"])){
 
                         <div class="form-group">
                             <label for="Name" style="margin-left:20px">Name</label>
-                            <input type="text" class="form-control"  style="margin-bottom: 40px; margin-left:20px" name="name" id="name" placeholder="Name"  required>
+                            <input type="text" class="form-control"  style="margin-bottom: 40px; margin-left:20px" name="name" id="name" placeholder="<?php echo $r['name'] ?>"  required>
                         </div>
 
                         <div class="form-group">
                             <label for="Password" style="margin-left:20px">Password</label>
-                            <input type="password" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="password" id="password" placeholder="Enter password" required>
+                            <input type="password" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="password" id="password" placeholder="<?php echo $r['password'] ?>" required>
                         </div>
 
                         <h5 style="margin-bottom: 50px"><strong>Email : stevejobs@icloud.com</strong></h5>
 
                         <div class="form-group">
                             <label for="Email" style="margin-left:20px">Email address</label>
-                            <input type="email" class="form-control"  style="margin-bottom: 10px;  margin-left:20px"name="email" id="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <input type="email" class="form-control"  style="margin-bottom: 10px;  margin-left:20px"name="email" id="Email" aria-describedby="emailHelp" placeholder="<?php echo $r['email'] ?>" required>
                             <small id="emailHelp" class="form-text text-muted"  style="margin-bottom: 40px;  margin-left:20px" >We'll never share your email with anyone else.</small>
                         </div>
 
@@ -161,7 +118,7 @@ if(!isset($_REQUEST["submitted"])){
 
                         <div class="form-group">
                             <label for="age" style="margin-left:20px">Age</label>
-                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="age" id="age"  required>
+                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="age" id="age" placeholder="<?php echo $r['age'] ?>" required>
                         </div>
 
                     </div>
@@ -173,28 +130,28 @@ if(!isset($_REQUEST["submitted"])){
 
                         <div class="form-group">
                             <label for="mobilenumber" style="margin-left:20px">Mobile Number</label>
-                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="mobilenumber" id="mobilenumber"  required>
+                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="mobilenumber" id="mobilenumber" placeholder="<?php echo $r['mobilenumber'] ?>" required>
                         </div>
 
                         <h5 style="margin-bottom: 50px"><strong>Country : Singapore</strong></h5>
 
                         <div class="form-group">
                             <label for="Country" style="margin-left:20px">Country</label>
-                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="country" id="country"  required>
+                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="country" id="country" placeholder="<?php echo $r['country'] ?>"  required>
                         </div>
 
                         <h5 style="margin-bottom: 50px"><strong>City : Singapore</strong></h5>
 
                         <div class="form-group">
                             <label for="City" style="margin-left:20px">City</label>
-                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="city" id="city"  required>
+                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="city" id="city" placeholder="<?php echo $r['city'] ?>" required>
                         </div>
 
                         <h5 style="margin-bottom: 50px"><strong>City : Blk 123, Stevens Road Singapore 123456</strong></h5>
 
                         <div class="form-group">
                             <label for="Address" style="margin-left:20px">Address</label>
-                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="address" id="address"  required>
+                            <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="address" id="address" placeholder="<?php echo $r['address'] ?>" required>
                         </div>
 
                         <input type="hidden" name="submitted" value="1"><input name="update" type="submit" id="update" value="Update">

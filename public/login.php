@@ -115,9 +115,11 @@ if(isset($_REQUEST["submitted"])){
                         </div>
 
 
-                        <div><?=$formerror?></div>
+
                         <form name="myForm" method="post">
                             <div class="form-group">
+                                <?php if(isset($formerror)){ ?><div class="alert alert-success" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
+                                <?php if(isset($formerror)){ ?><div class="alert alert-danger" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
 
                                 <div class="col">
                                     <div class="row">

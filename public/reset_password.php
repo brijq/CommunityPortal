@@ -49,17 +49,16 @@
     </div>
 </nav>
 
-<form action="modules/reset/reset.php" method="POST">
-    E-mail Address: <input type="text" name="email" size="20" /><br />
-    New Password: <input type="password" name="password" size="20" /><br />
-    Confirm Password: <input type="password" name="confirmpassword" size="20" /><br />
-    <input type="hidden" name="q" value="';
-
-    if (isset($_GET["q"])) {
-        echo $_GET["q"];
-    }
-    echo '" /><input type="submit" name="ResetPasswordForm" value=" Reset Password " />
-</form> ;
+<form class="form-signin" method="POST">
+        <h2 class="form-signin-heading">Forgot Password</h2>
+        <div class="input-group">
+	  <span class="input-group-addon" id="basic-addon1">@</span>
+	  <input type="text" name="email" class="form-control" placeholder="Email" required>
+	</div>
+	<br />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Forgot Password</button>
+        <a class="btn btn-lg btn-primary btn-block" href="login.php">Login</a>
+      </form>
 
   
 <!--Footer-->

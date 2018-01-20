@@ -1,9 +1,11 @@
 <?php
-session_start();
-require_once '../../includes/autoload.php';
 
+require_once('../../../classes/util/connect.php');
+require('../../../classes/util/config.php');
+//require('../PHPMailer/PHPMailerAutoload.php');
 
-
+$ReadSql = "SELECT * FROM `tb_message`";
+$res = mysqli_query($connection,$ReadSql);
 
 
 ?>
@@ -60,39 +62,34 @@ require_once '../../includes/autoload.php';
 
 <!-- Body -->
 <div class="container">
-    <h2>Messages: </h2>
-
     <div class="row">
-        <div class="col-lg-3">
-            <img src="./avatar%20photo.png" class="img-thumbnail"  style="margin-bottom: 30px; margin-top: 50px; width: 304px; height: 236px ">
-        </div>
+        <table class="table">
+            <tr>
+                <th>No</th>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Message</th>
+            </tr>
+            <?php
+            while ($r = mysqli_fetch_assoc($res)){
+                ?>
+            <tr>
 
-        <div class="col-lg-7">
-            <h3 style="margin-top: 100px; color: #2aabd2">Sundar Pichai</h3>
-            <h5 style="margin-top: 50px;">Hello , Can you help me on this area regarding how do I work on the new framework?</h5>
-        </div>
-
-        <div class="col-lg-2 pull-right">
-            <h3 style="margin-top: 100px; color: #2aabd2">Monday</h3>
-        </div>
+                <td><?php echo $r['id'];?></td>
+                <td><img src="../../images/avatar%20photo.png" class="img-thumbnail"  style="margin-bottom: 30px; margin-top: 50px; width: 304px; height: 236px "></td>
+                <td><?php echo $r['name'];?></td>
+                <td><?php echo $r['messages'];?></td>
+            </tr>
+            <?php } ?>
+        </table>
     </div>
-
-    <div class="row">
-        <div class="col-lg-3">
-            <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 30px; margin-top: 50px; width: 304px; height: 236px ">
-        </div>
-
-        <div class="col-lg-7">
-            <h3 style="margin-top: 100px; color: #2aabd2">Melissa Tan</h3>
-            <h5 style="margin-top: 50px;">Hello , Check Out this new Design CMS System and Content Management Area on this.?</h5>
-        </div>
-
-        <div class="col-lg-2 pull-right">
-            <h3 style="margin-top: 100px; color: #2aabd2">Tuesday</h3>
-        </div>
-    </div>
-
 </div>
+
+
+
+
+
+
 
 
 

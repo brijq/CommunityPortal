@@ -1,109 +1,42 @@
 <?php
 
-require_once 'includes/autoload.php';
+require_once('../classes/util/connect.php');
+require('../classes/util/config.php');
+//require('../PHPMailer/PHPMailerAutoload.php');
+if(isset($_POST) & !empty($_POST)){
+    $name = mysqli_real_escape_string($connection, $_POST['name']);
+    $sql = "SELECT * FROM `tb_user` WHERE name = '$name'";
+    $res = mysqli_query($connection, $sql);
+    $count = mysqli_num_rows($res);
+    if($count == 1){
+        $r = mysqli_fetch_assoc($res);
+        $password = $r['password'];
+        $to = $r['email'];
+        $subject = "Your Recovered Password";
 
-use classes\business\UserManager;
-
-
-// Import PHPMailer classes into the global namespace
-// These must be at the top of your script, not inside a function
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require '../PHPMailer/src/Exception.php';
-require '../PHPMailer/src/PHPMailer.php';
-require '../PHPMailer/src/SMTP.php';
-
-$formerror="";
-
-$email="";
-
-if(isset($_REQUEST["submitted"])) {
-    $email = isset($_REQUEST["email"]) ? $_REQUEST["email"] : '';
-
-    $UM = new UserManager();
-
-
-    $existuser = $UM->getUserByEmail($email);
-
-    if (isset($existuser)) {
-
-        $existingUser = $UM->getUserByEmailReset($email);
-
-        if ($existingUser["email"]) {
-            // Create a unique salt. This will never leave PHP unencrypted.
-            $salt = "498#2D83B631%3800EBD!801600D*7E3CC13";
-
-            // Create the unique user password reset key
-            $password = hash('sha512', $salt . $existingUser["email"]);
-
-            // Create a url which we will direct them to reset their password
-            $pwrurl = "http://localhost:8080/CommunityPortal/public/reset_password.php?q=".$password;
-
-            // Mail them their key
-            $mailbody = "Dear user,\n\nIf this e-mail does not apply to you please ignore it. It appears that you have requested a password reset at our website www.yoursitehere.com\n\nTo reset your password, please click the link below. If you cannot click it, please paste it into your web browser's address bar.\n\n" . $pwrurl . "\n\nThanks,\nThe Administration";
-            mail($existingUser["email"], "CommunityPortal - Password Reset", $mailbody);
-            echo "Your password recovery key has been sent to your e-mail address.";
-
-            $mail = new PHPMailer();
-
-            try {
-                $mail->IsSMTP();
-                $mail->Host = 'smtp.mailgun.org';
-                $mail->SMTPAuth = true;
-                $mail->Username = 'postmaster@mailgun.taiyuan.com.sg';
-                $mail->Password = '5585dffec4722c40fbd39390e0765a20';
-                $mail->Port = '587';
-
-                //$mail->From = $_POST["email"];
-                $mail->From = 'noreply@communityportal.com';
-                $mail->FromName = 'CommunityPortal';
-                $mail->addAddress($email);
-                $mail->addReplyTo($email, 'Reply');
-
-                $mail->isHTML(true);
-                $mail->Subject = 'Forget Password Confirmation';
-                $mail->Body = $mailbody;
-
-                $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-                if (!$mail->send()) {
-                    echo 'Message could not be send';
-                    //$formerror = 'Message could not be send';
-                } else {
-                    echo 'Message has been send';
-                    //$formerror = 'Message has been send';
-
-                }
-            } catch (Exception $e) {
-                echo 'Message could not be sent.';
-                echo 'Mailer Error: ' . $mail->ErrorInfo;
-            }
-            print "An email have already been send, Please Check Your inbox.";
-            $_SESSION['email'] = $email;
-
-            $formerror = "An email have already been send, Please Check Your inbox.";
-            header("Location: reset_password.php");
-        } else {
-            print "User does not exist . Please fill in an valid email address or Register First";
-            $formerror = "User does not exist . Please fill in an valid email address";
+        $message = "Your password have been recovered: " . $password . "Please do not lose your password". "This is a auto generated email";
+        $headers = "From : communityportal@brian.com";
+        if(mail($to, $subject, $message, $headers)){
+            $smsg = "Your Password has been sent to your email id";
+        }else{
+            $fmsg =  "Failed to Recover your password, try again";
         }
+
+    }else{
+        $fmsg = "User name does not exist in database";
     }
 }
+
+
 ?>
-
-
-
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
-    <title>Developers Community-Design The Forget Password Page</title>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+        <title>Developers Community-Design The Forget Password Page</title>
+    </head>
 
 <!-- Navigation Bar -->
 <nav class="navbar">
@@ -121,8 +54,8 @@ if(isset($_REQUEST["submitted"])) {
         <form class="navbar-form navbar-right">
             <div class="form-group">
                 <div class="row">
-                <input type="text" class="form-control" placeholder="Username">
-                <input type="password" class="form-control" placeholder="Password">
+                    <input type="text" class="form-control" placeholder="Username">
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
             </div>
             <div class="row">
@@ -143,46 +76,35 @@ if(isset($_REQUEST["submitted"])) {
         </ul>
     </div>
 </nav>
+    <title>Forgot Password in PHP & MySQL</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 
-<!-- Body -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<body>
 <div class="container">
-    <div class="col-lg-6 text-center">
-        <div class="rectangle" style=" background:#BFC9CA ; margin-left: 280px; margin-top: 100px; margin-bottom: 100px; width: 600px; height: 600px">
-            <div class="row">
-                <div class="text-center" style="font-family: American Typewriter;">
-                    <h2>Developers Community</h2>
-                    <h2 style="margin-bottom: 100px">Get Started - Its Free!</h2>
-                </div>
-            </div>
+    <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+    <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
+    <form style="margin-bottom: 50px;" class="form-signin" method="POST">
+        <h2 class="form-signin-heading">Please Register</h2>
 
-
-            <div><?=$formerror?></div>
-            <form name="myForm" method="post">
-                <div class="form-group">
-
-                    <div class="col">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="username">Email</label>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter username"  style="margin-bottom: 50px; margin-left: 50px; width:500px; height:48px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <input type="hidden" name="submitted" value="1"><input type="submit" name="ForgotPassword" value="Request Reset Now">
-                <input type="submit" name="clear" value="Clear Search" onclick="javascript:clearForm();">
-
-            </form>
+        <div class="col-lg-5">
+        <div style ="margin-bottom: 50px;" class="input-group">
+            <input  style="width: 1100px;" type="text" name="name" class="form-control" placeholder="Name" required>
         </div>
-    </div>
+        </div>
+        <div style ="margin-bottom: 400px;">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Forgot Password</button>
+        <a class="btn btn-lg btn-primary btn-block" href="modules/user/register.php">Register</a>
+        </div>
+    </form>
 </div>
+</body>
+</html>
+
 
 
 <!--Footer-->
@@ -226,4 +148,5 @@ if(isset($_REQUEST["submitted"])) {
 </div>
 </body>
 </html>
+ * */
 }
