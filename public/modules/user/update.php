@@ -1,30 +1,34 @@
 <?php
+/**
+ * This is the update user page
+ */
 require_once ('../../../classes/util/connect.php');
     $id = $_GET['id'];
     $SelSql = "SELECT * FROM `tb_user` WHERE id = $id";
     $res = mysqli_query($connection, $SelSql);
     $r = mysqli_fetch_assoc($res);
 
+    if(!isset($_POST) & !empty($_POST)) {
+        $name = mysqli_real_escape_string($connection, $_POST['name']);
+        $email = mysqli_real_escape_string($connection, $_POST['email']);
+        $password = mysqli_real_escape_string($connection, $_POST['password']);
+        $age = mysqli_real_escape_string($connection, $_POST['age']);
+        $mobilenumber = mysqli_real_escape_string($connection, $_POST['mobilenumber']);
+        $country = mysqli_real_escape_string($connection, $_POST['country']);
+        $city = mysqli_real_escape_string($connection, $_POST['city']);
+        $address = mysqli_real_escape_string($connection, $_POST['address']);
 
-    if(!isset($_POST) & !empty($_POST)){
-        $name= mysqli_real_escape_string($connection, $_POST['name']);
-        $email=mysqli_real_escape_string($connection, $_POST['email']);
-        $password=mysqli_real_escape_string($connection, $_POST['password']);
-        $age=mysqli_real_escape_string($connection, $_POST['age']);
-        $mobilenumber=mysqli_real_escape_string($connection, $_POST['mobilenumber']);
-        $country=mysqli_real_escape_string($connection, $_POST['country']);
-        $city=mysqli_real_escape_string($connection, $_POST['city']);
-        $address=mysqli_real_escape_string($connection, $_POST['address']);
 
+        $UpdateSql = "UPDATE `tb_user` SET name = '$name', email = '$email', password = '$password',age = '$age', mobilenumber = '$mobilenumber',country='$country',city='$city', address = '$address' WHERE $id";
+        $res = mysqli_query($connection, $UpdateSql);
 
-        $UpdateSql = "UPDATE 'tb_user' SET name = '$name', email = '$email', password = '$password',age = '$age', mobilenumber = '$mobilenumber',country='$country',city='$city', address = '$address' WHERE $id";
-        $res = mysqli_query($connection , $CreateSql);
-        if ($res){
-            echo 'Successfully inserted data';
-        }else{
-            echo "failed to insert data";
+        if ($res) {
+            echo 'Successfully update data';
+        } else {
+            echo "failed to update data";
         }
-}
+    }
+
 
 ?>
 
@@ -79,9 +83,11 @@ require_once ('../../../classes/util/connect.php');
 
 <!-- Body -->
 <div class="container">
+    <form name="myForm" method="post">
+        <div class="form-group">
     <div class="row">
         <div class="col-lg-3">
-            <img src="../../images/avatar%20photo.png" class="img-thumbnail"  style="margin-bottom: 30px; margin-top: 50px; width:304px; height:236px ">
+            <img src="../../images/assets/handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 30px; margin-top: 50px; width:304px; height:236px ">
         </div>
 
         <div class="col-lg-5">
@@ -154,7 +160,8 @@ require_once ('../../../classes/util/connect.php');
                             <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="address" id="address" placeholder="<?php echo $r['address'] ?>" required>
                         </div>
 
-                        <input type="hidden" name="submitted" value="1"><input name="update" type="submit" id="update" value="Update">
+                        <input type="hidden" name="submitted" value="1"><input type="submit" name="Update" value="Update">
+
 
 
                         <input type="submit" name="clear" value="Clear Search" onclick="javascript:clearForm();">
@@ -163,6 +170,8 @@ require_once ('../../../classes/util/connect.php');
             </div>
         </div>
     </div>
+        </div>
+    </form>
 
     <div class="row">
         <div class="col-lg-3">

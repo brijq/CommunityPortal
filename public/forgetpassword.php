@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * This is the forgetpassword page
+ */
 require_once('../classes/util/connect.php');
 require('../classes/util/config.php');
 //require('../PHPMailer/PHPMailerAutoload.php');
