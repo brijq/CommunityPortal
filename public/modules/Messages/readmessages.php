@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * This is a page of read messages.php
+ */
 require_once('../../../classes/util/connect.php');
 require('../../../classes/util/config.php');
 //require('../PHPMailer/PHPMailerAutoload.php');
@@ -75,8 +77,8 @@ $res = mysqli_query($connection,$ReadSql);
                 ?>
             <tr>
 
-                <td><?php echo $r['id'];?></td>
-                <td><img src="../../images/avatar%20photo.png" class="img-thumbnail"  style="margin-bottom: 30px; margin-top: 50px; width: 304px; height: 236px "></td>
+                <td><?php echo $r['messageid'];?></td>
+                <td><img src="../../images/assets/avatar%20photo.png" class="img-thumbnail"  style="margin-bottom: 30px; margin-top: 50px; width: 304px; height: 236px "></td>
                 <td><?php echo $r['name'];?></td>
                 <td><?php echo $r['messages'];?></td>
             </tr>

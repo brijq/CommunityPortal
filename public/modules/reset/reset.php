@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * This is a page of reset.php
+ */
     require_once('../../../classes/util/connect.php');
 
 

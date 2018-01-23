@@ -1,4 +1,7 @@
 <?php
+/**
+ * This is the thank you page
+ */
 session_start();
 ?>
 <h1>Thank You</h1>

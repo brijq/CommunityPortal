@@ -1,4 +1,7 @@
 <?php
+/**
+ * This is the register .php page
+ */
 session_start();
 require_once '../../includes/autoload.php';
 

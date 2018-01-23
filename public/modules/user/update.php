@@ -8,7 +8,7 @@ require_once ('../../../classes/util/connect.php');
     $res = mysqli_query($connection, $SelSql);
     $r = mysqli_fetch_assoc($res);
 
-    if(!isset($_POST) & !empty($_POST)) {
+    if(isset($_POST) & !empty($_POST)) {
         $name = mysqli_real_escape_string($connection, $_POST['name']);
         $email = mysqli_real_escape_string($connection, $_POST['email']);
         $password = mysqli_real_escape_string($connection, $_POST['password']);
@@ -19,13 +19,13 @@ require_once ('../../../classes/util/connect.php');
         $address = mysqli_real_escape_string($connection, $_POST['address']);
 
 
-        $UpdateSql = "UPDATE `tb_user` SET name = '$name', email = '$email', password = '$password',age = '$age', mobilenumber = '$mobilenumber',country='$country',city='$city', address = '$address' WHERE $id";
+        $UpdateSql = "UPDATE `tb_user` SET name = '$name', email = '$email', password = '$password',age = '$age', mobilenumber = '$mobilenumber',country='$country',city='$city', address = '$address' WHERE id=$id";
         $res = mysqli_query($connection, $UpdateSql);
 
         if ($res) {
-            echo 'Successfully update data';
+            $smsg = 'Successfully updated data';
         } else {
-            echo "failed to update data";
+            $fmsg = "failed to update data";
         }
     }
 
@@ -93,6 +93,8 @@ require_once ('../../../classes/util/connect.php');
         <div class="col-lg-5">
             <div class="rectangle" style="background-color: #BFC9CA ; width: 1000px; height: 800px ;margin-top: 50px">
                 <div class="row">
+                    <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+                    <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
                     <div class="col-lg-2 pull-right" style="margin-top: 10px">
                         <button type="button" class="btn btn-info">Edit</button>
                     </div>
@@ -116,7 +118,7 @@ require_once ('../../../classes/util/connect.php');
 
                         <div class="form-group">
                             <label for="Email" style="margin-left:20px">Email address</label>
-                            <input type="email" class="form-control"  style="margin-bottom: 10px;  margin-left:20px"name="email" id="Email" aria-describedby="emailHelp" placeholder="<?php echo $r['email'] ?>" required>
+                            <input type="email" class="form-control"  style="margin-bottom: 10px;  margin-left:20px"name="email" id="email" aria-describedby="emailHelp" placeholder="<?php echo $r['email'] ?>" required>
                             <small id="emailHelp" class="form-text text-muted"  style="margin-bottom: 40px;  margin-left:20px" >We'll never share your email with anyone else.</small>
                         </div>
 

@@ -1,4 +1,7 @@
 <?php
+/**
+ * This is the config page
+ */
 namespace classes\util;
 
 class Config
