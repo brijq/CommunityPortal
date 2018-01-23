@@ -3,8 +3,8 @@
  * This is the update user page
  */
 require_once ('../../../classes/util/connect.php');
-    $id = $_GET['id'];
-    $SelSql = "SELECT * FROM `tb_user` WHERE id = $id";
+    $id = $_GET['userid'];
+    $SelSql = "SELECT * FROM `tb_user` WHERE userid = $id";
     $res = mysqli_query($connection, $SelSql);
     $r = mysqli_fetch_assoc($res);
 
@@ -19,7 +19,7 @@ require_once ('../../../classes/util/connect.php');
         $address = mysqli_real_escape_string($connection, $_POST['address']);
 
 
-        $UpdateSql = "UPDATE `tb_user` SET name = '$name', email = '$email', password = '$password',age = '$age', mobilenumber = '$mobilenumber',country='$country',city='$city', address = '$address' WHERE id=$id";
+        $UpdateSql = "UPDATE `tb_user` SET name = '$name', email = '$email', password = '$password',age = '$age', mobilenumber = '$mobilenumber',country='$country',city='$city', address = '$address' WHERE userid=$id";
         $res = mysqli_query($connection, $UpdateSql);
 
         if ($res) {

@@ -42,7 +42,7 @@ if(isset($_REQUEST["submitted"])){
 
     $existuser=$UM->getUserByEmailPassword($email,$password);
     if(isset($existuser)){
-        print "user exist";
+        $formerror = "user exist";
         session_start();
         $_SESSION['email']=$email;
         header("Location: home.php");
@@ -114,12 +114,11 @@ if(isset($_REQUEST["submitted"])){
                             </div>
                         </div>
 
-
+                        <?php if(isset($password_err)){ ?><div class="alert alert-danger" role="alert"> <?php echo $password_err; ?> </div><?php } ?>
+                        <?php if(isset($formerror)){ ?><div class="alert alert-danger" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
 
                         <form name="myForm" method="post">
                             <div class="form-group">
-                                <?php if(isset($formerror)){ ?><div class="alert alert-success" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
-                                <?php if(isset($formerror)){ ?><div class="alert alert-danger" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
 
                                 <div class="col">
                                     <div class="row">

@@ -3,13 +3,111 @@
   <component name="ChangeListManager">
     <list default="true" id="ebe8bf19-dcc3-452e-81b3-03f19dafe084" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/util/Config.php" afterPath="$PROJECT_DIR$/classes/util/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/autoload.php" afterPath="$PROJECT_DIR$/public/includes/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/security.php" afterPath="$PROJECT_DIR$/public/includes/security.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/Messages/readmessages.php" afterPath="$PROJECT_DIR$/public/modules/Messages/readmessages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/reset/reset.php" afterPath="$PROJECT_DIR$/public/modules/reset/reset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/user/register.php" afterPath="$PROJECT_DIR$/public/modules/user/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/user/thankyou.php" afterPath="$PROJECT_DIR$/public/modules/user/thankyou.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Command.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Command.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.Adapter.Silex.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.Adapter.Silex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.Adapter.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.Adapter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Provider.Console.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Provider.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Provider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Tests.Command.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Tests.Command.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Tests.Provider.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Tests.Provider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.Tests.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.Tests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Cilex.html" afterPath="$PROJECT_DIR$/namespaces/Cilex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpCollection.ObjectBasicsHandler.html" afterPath="$PROJECT_DIR$/namespaces/PhpCollection.ObjectBasicsHandler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpCollection.Tests.html" afterPath="$PROJECT_DIR$/namespaces/PhpCollection.Tests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpCollection.html" afterPath="$PROJECT_DIR$/namespaces/PhpCollection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpOption.Tests.html" afterPath="$PROJECT_DIR$/namespaces/PhpOption.Tests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpOption.html" afterPath="$PROJECT_DIR$/namespaces/PhpOption.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Builder.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Builder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Comment.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Comment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Lexer.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Lexer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.AssignOp.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.AssignOp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.BinaryOp.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.BinaryOp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.Cast.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.Cast.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Expr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Name.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Name.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Scalar.MagicConst.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Scalar.MagicConst.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Scalar.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Scalar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Stmt.TraitUseAdaptation.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Stmt.TraitUseAdaptation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.Stmt.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.Stmt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Node.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Node.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.NodeVisitor.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.NodeVisitor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.PrettyPrinter.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.PrettyPrinter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Serializer.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Serializer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.Unserializer.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.Unserializer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/PhpParser.html" afterPath="$PROJECT_DIR$/namespaces/PhpParser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Seld.JsonLint.html" afterPath="$PROJECT_DIR$/namespaces/Seld.JsonLint.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Seld.html" afterPath="$PROJECT_DIR$/namespaces/Seld.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.Processor.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.Processor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.Reader.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.Reader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.Writer.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.Writer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Config.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Config.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.EventManager.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.EventManager.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.EventManager.Filter.html" afterPath="$PROJECT_DIR$/namespaces/Zend.EventManager.Filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.EventManager.Test.html" afterPath="$PROJECT_DIR$/namespaces/Zend.EventManager.Test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.EventManager.html" afterPath="$PROJECT_DIR$/namespaces/Zend.EventManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Filter.Compress.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Filter.Compress.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Filter.Encrypt.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Filter.Encrypt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Filter.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Filter.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Filter.File.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Filter.File.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Filter.Word.Service.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Filter.Word.Service.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Filter.Word.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Filter.Word.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Filter.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Aggregate.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Aggregate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Filter.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Iterator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Iterator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.NamingStrategy.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.NamingStrategy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Strategy.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Strategy.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Strategy.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.Strategy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Hydrator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Hydrator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Filter.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.Loader.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.Loader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.Plural.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.Plural.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Translator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.Validator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.Validator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.View.Helper.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.View.Helper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.View.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.View.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.I18n.html" afterPath="$PROJECT_DIR$/namespaces/Zend.I18n.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Json.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Json.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Json.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Json.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Serializer.Adapter.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Serializer.Adapter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Serializer.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Serializer.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Serializer.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Serializer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Di.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Di.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Factory.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Factory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Proxy.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Proxy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Test.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.Test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.html" afterPath="$PROJECT_DIR$/namespaces/Zend.ServiceManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.ArrayUtils.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.ArrayUtils.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Extractor.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Extractor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Guard.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Guard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Aggregate.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Aggregate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Filter.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Iterator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Iterator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.NamingStrategy.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.NamingStrategy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Strategy.Exception.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Strategy.Exception.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Strategy.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.Strategy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.Hydrator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.StringWrapper.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.StringWrapper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.Stdlib.html" afterPath="$PROJECT_DIR$/namespaces/Zend.Stdlib.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/Zend.html" afterPath="$PROJECT_DIR$/namespaces/Zend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/ZendBench.Cache.html" afterPath="$PROJECT_DIR$/namespaces/ZendBench.Cache.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/ZendBench.ServiceManager.BenchAsset.html" afterPath="$PROJECT_DIR$/namespaces/ZendBench.ServiceManager.BenchAsset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/ZendBench.ServiceManager.html" afterPath="$PROJECT_DIR$/namespaces/ZendBench.ServiceManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/ZendBench.Stdlib.html" afterPath="$PROJECT_DIR$/namespaces/ZendBench.Stdlib.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/ZendBench.html" afterPath="$PROJECT_DIR$/namespaces/ZendBench.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.business.html" afterPath="$PROJECT_DIR$/namespaces/classes.business.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.data.html" afterPath="$PROJECT_DIR$/namespaces/classes.data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.entity.html" afterPath="$PROJECT_DIR$/namespaces/classes.entity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.html" afterPath="$PROJECT_DIR$/namespaces/classes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/classes.util.html" afterPath="$PROJECT_DIR$/namespaces/classes.util.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/namespaces/default.html" afterPath="$PROJECT_DIR$/namespaces/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/login.php" afterPath="$PROJECT_DIR$/public/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/user/update.php" afterPath="$PROJECT_DIR$/public/modules/user/update.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,13 +132,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="readmessages.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="readmessages.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/modules/Messages/readmessages.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
+                <state relative-caret-position="-196">
                   <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
                   <folding>
                     <marker date="1516717066044" expanded="true" signature="211:237" ph="SELECT * FRO... tb_message" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-757">
+                  <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                  <folding>
+                    <marker date="1516717815330" expanded="true" signature="140:163" ph="SELECT * FRO... tb_user" />
+                    <marker date="1516717815330" expanded="true" signature="140:169" ph="SELECT * FRO... tb_user" />
+                    <marker date="1516717815330" expanded="true" signature="140:170" ph="SELECT * FRO... tb_user" />
+                    <marker date="1516717815330" expanded="true" signature="140:179" ph="SELECT * FRO... tb_user" />
+                    <marker date="1516717815330" expanded="true" signature="140:180" ph="SELECT * FRO... tb_user" />
+                    <marker date="1516717815330" expanded="true" signature="945:1128" ph="UPDATE `tb_u... " />
+                    <marker date="1516717815330" expanded="true" signature="945:1135" ph="UPDATE `tb_u... " />
                   </folding>
                 </state>
               </provider>
@@ -50,24 +166,6 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-                  <folding>
-                    <marker date="1516710955158" expanded="true" signature="136:159" ph="SELECT * FRO... tb_user" />
-                    <marker date="1516710955158" expanded="true" signature="136:165" ph="SELECT * FRO... tb_user" />
-                    <marker date="1516710955158" expanded="true" signature="136:166" ph="SELECT * FRO... tb_user" />
-                    <marker date="1516710955158" expanded="true" signature="136:171" ph="SELECT * FRO... tb_user" />
-                    <marker date="1516710955158" expanded="true" signature="136:172" ph="SELECT * FRO... tb_user" />
-                    <marker date="1516710955158" expanded="true" signature="937:1120" ph="UPDATE `tb_u... " />
-                    <marker date="1516710955158" expanded="true" signature="937:1123" ph="UPDATE `tb_u... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/home.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -91,11 +189,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/login.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2295">
-                  <caret line="153" column="93" lean-forward="false" selection-start-line="153" selection-start-column="93" selection-end-line="153" selection-end-column="93" />
+                <state relative-caret-position="592">
+                  <caret line="117" column="143" lean-forward="false" selection-start-line="117" selection-start-column="143" selection-end-line="117" selection-end-column="143" />
                   <folding>
                     <element signature="e#7#40#0#PHP" expanded="true" />
                   </folding>
@@ -107,7 +205,7 @@
             <entry file="file://$PROJECT_DIR$/public/logout.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+                  <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
                   <folding>
                     <element signature="e#6#63#0#PHP" expanded="true" />
                   </folding>
@@ -119,7 +217,7 @@
             <entry file="file://$PROJECT_DIR$/public/reset_password.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1590">
-                  <caret line="106" column="2" lean-forward="true" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
+                  <caret line="106" column="2" lean-forward="false" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
                   <folding>
                     <marker date="1516197761720" expanded="true" signature="45:3377" ph="..." />
                     <marker date="1516197761720" expanded="true" signature="52:302" ph="..." />
@@ -175,7 +273,7 @@
             <entry file="file://$PROJECT_DIR$/public/includes/footer.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
-                  <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+                  <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -191,7 +289,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="security.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="security.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/includes/security.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="30">
@@ -236,9 +334,7 @@
         <option value="$PROJECT_DIR$/classes/data/UserManagerDB.php" />
         <option value="$PROJECT_DIR$/classes/util/connect.php" />
         <option value="$PROJECT_DIR$/public/reset_password.php" />
-        <option value="$PROJECT_DIR$/public/login.php" />
         <option value="$PROJECT_DIR$/public/forgetpassword.php" />
-        <option value="$PROJECT_DIR$/public/modules/user/update.php" />
         <option value="$PROJECT_DIR$/public/modules/Messages/readmessages.php" />
         <option value="$PROJECT_DIR$/public/modules/reset/reset.php" />
         <option value="$PROJECT_DIR$/classes/util/Config.php" />
@@ -246,6 +342,8 @@
         <option value="$PROJECT_DIR$/public/modules/user/thankyou.php" />
         <option value="$PROJECT_DIR$/public/includes/autoload.php" />
         <option value="$PROJECT_DIR$/public/includes/security.php" />
+        <option value="$PROJECT_DIR$/public/modules/user/update.php" />
+        <option value="$PROJECT_DIR$/public/login.php" />
       </list>
     </option>
   </component>
@@ -292,7 +390,14 @@
               <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -369,17 +474,18 @@
       <workItem from="1516472385853" duration="219000" />
       <workItem from="1516531514527" duration="3115000" />
       <workItem from="1516624229295" duration="289000" />
-      <workItem from="1516709268245" duration="2281000" />
+      <workItem from="1516709268245" duration="4027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120058000" />
+    <option name="totallyTimeSpent" value="121804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13988096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13988096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -437,13 +543,13 @@
         <state relative-caret-position="105">
           <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding>
-            <marker date="1516710955158" expanded="true" signature="136:159" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:165" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:166" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:171" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:172" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="937:1120" ph="UPDATE `tb_u... " />
-            <marker date="1516710955158" expanded="true" signature="937:1123" ph="UPDATE `tb_u... " />
+            <marker date="1516717815330" expanded="true" signature="140:163" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:169" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:170" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:179" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:180" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="945:1128" ph="UPDATE `tb_u... " />
+            <marker date="1516717815330" expanded="true" signature="945:1135" ph="UPDATE `tb_u... " />
           </folding>
         </state>
       </provider>
@@ -488,7 +594,7 @@
         <state relative-caret-position="240">
           <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
-            <element signature="e#110#134#0#PHP" expanded="true" />
+            <element signature="e#110#134#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -526,13 +632,13 @@
         <state relative-caret-position="255">
           <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
-            <marker date="1516710955158" expanded="true" signature="136:159" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:165" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:166" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:171" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:172" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="937:1120" ph="UPDATE `tb_u... " />
-            <marker date="1516710955158" expanded="true" signature="937:1123" ph="UPDATE `tb_u... " />
+            <marker date="1516717815330" expanded="true" signature="140:163" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:169" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:170" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:179" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:180" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="945:1128" ph="UPDATE `tb_u... " />
+            <marker date="1516717815330" expanded="true" signature="945:1135" ph="UPDATE `tb_u... " />
           </folding>
         </state>
       </provider>
@@ -571,7 +677,7 @@
         <state relative-caret-position="600">
           <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding>
-            <element signature="e#110#134#0#PHP" expanded="true" />
+            <element signature="e#110#134#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -654,7 +760,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/modules/Messages/readmessages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="-196">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding>
             <marker date="1516717066044" expanded="true" signature="211:237" ph="SELECT * FRO... tb_message" />
@@ -689,7 +795,7 @@
         <state relative-caret-position="30">
           <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding>
-            <element signature="e#110#134#0#PHP" expanded="true" />
+            <element signature="e#110#134#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,22 +805,6 @@
         <state relative-caret-position="30">
           <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <marker date="1516710955158" expanded="true" signature="136:159" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:165" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:166" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:171" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="136:172" ph="SELECT * FRO... tb_user" />
-            <marker date="1516710955158" expanded="true" signature="937:1120" ph="UPDATE `tb_u... " />
-            <marker date="1516710955158" expanded="true" signature="937:1123" ph="UPDATE `tb_u... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,20 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="153" column="93" lean-forward="false" selection-start-line="153" selection-start-column="93" selection-end-line="153" selection-end-column="93" />
-          <folding>
-            <element signature="e#7#40#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding>
             <element signature="e#6#63#0#PHP" expanded="true" />
           </folding>
@@ -760,7 +840,7 @@
     <entry file="file://$PROJECT_DIR$/public/reset_password.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
-          <caret line="106" column="2" lean-forward="true" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
+          <caret line="106" column="2" lean-forward="false" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
           <folding>
             <marker date="1516197761720" expanded="true" signature="45:3377" ph="..." />
             <marker date="1516197761720" expanded="true" signature="52:302" ph="..." />
@@ -812,7 +892,7 @@
     <entry file="file://$PROJECT_DIR$/public/includes/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -830,6 +910,32 @@
         <state relative-caret-position="30">
           <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/user/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-757">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1516717815330" expanded="true" signature="140:163" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:169" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:170" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:179" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="140:180" ph="SELECT * FRO... tb_user" />
+            <marker date="1516717815330" expanded="true" signature="945:1128" ph="UPDATE `tb_u... " />
+            <marker date="1516717815330" expanded="true" signature="945:1135" ph="UPDATE `tb_u... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="117" column="143" lean-forward="false" selection-start-line="117" selection-start-column="143" selection-end-line="117" selection-end-column="143" />
+          <folding>
+            <element signature="e#7#40#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
