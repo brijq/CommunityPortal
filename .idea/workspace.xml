@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe8bf19-dcc3-452e-81b3-03f19dafe084" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/data/UserManagerDB.php" afterPath="$PROJECT_DIR$/classes/data/UserManagerDB.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/modules/user/register.php" afterPath="$PROJECT_DIR$/public/modules/user/register.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +61,19 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="thankyou.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/modules/user/register.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="454">
+                  <caret line="189" column="54" lean-forward="false" selection-start-line="189" selection-start-column="54" selection-end-line="189" selection-end-column="54" />
+                  <folding>
+                    <element signature="e#110#134#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="thankyou.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/modules/user/thankyou.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="150">
@@ -189,6 +202,7 @@
       <find>From</find>
       <find>addAddress</find>
       <find>msg</find>
+      <find>echo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,7 +224,6 @@
         <option value="$PROJECT_DIR$/classes/business/UserManager.php" />
         <option value="$PROJECT_DIR$/public/logout.php" />
         <option value="$PROJECT_DIR$/public/home.php" />
-        <option value="$PROJECT_DIR$/classes/data/UserManagerDB.php" />
         <option value="$PROJECT_DIR$/classes/util/connect.php" />
         <option value="$PROJECT_DIR$/public/reset_password.php" />
         <option value="$PROJECT_DIR$/public/forgetpassword.php" />
@@ -222,6 +235,7 @@
         <option value="$PROJECT_DIR$/public/includes/security.php" />
         <option value="$PROJECT_DIR$/public/modules/user/update.php" />
         <option value="$PROJECT_DIR$/public/login.php" />
+        <option value="$PROJECT_DIR$/classes/data/UserManagerDB.php" />
         <option value="$PROJECT_DIR$/public/modules/user/register.php" />
       </list>
     </option>
@@ -259,6 +273,23 @@
             <path>
               <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommunityPortal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="CommunityPortal" type="b2602c69:ProjectViewProjectNode" />
@@ -353,12 +384,12 @@
       <workItem from="1516472385853" duration="219000" />
       <workItem from="1516531514527" duration="3115000" />
       <workItem from="1516624229295" duration="289000" />
-      <workItem from="1516709268245" duration="5450000" />
+      <workItem from="1516709268245" duration="5809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123227000" />
+    <option name="totallyTimeSpent" value="123586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -473,7 +504,7 @@
         <state relative-caret-position="240">
           <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
-            <element signature="e#110#134#0#PHP" expanded="false" />
+            <element signature="e#110#134#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -556,7 +587,7 @@
         <state relative-caret-position="600">
           <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding>
-            <element signature="e#110#134#0#PHP" expanded="false" />
+            <element signature="e#110#134#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -620,20 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/data/UserManagerDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="116" column="2" lean-forward="false" selection-start-line="116" selection-start-column="2" selection-end-line="116" selection-end-column="2" />
-          <folding>
-            <marker date="1515940671639" expanded="true" signature="806:873" ph="select * fro... tb_user" />
-            <marker date="1515940671639" expanded="true" signature="1299:1341" ph="select * fro... tb_user" />
-            <marker date="1515940671639" expanded="true" signature="1804:1852" ph="SELECT email... tb_user" />
-            <marker date="1515940671639" expanded="true" signature="2843:2864" ph="select * fro... TB_USER" />
-            <marker date="1515940671639" expanded="true" signature="3273:3297" ph="select * fro... TB_MESSAGE" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,6 +809,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/modules/user/thankyou.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/data/UserManagerDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="79" column="28" lean-forward="false" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+          <folding>
+            <marker date="1516721988322" expanded="true" signature="810:877" ph="select * fro... tb_user" />
+            <marker date="1516721988322" expanded="true" signature="1303:1345" ph="select * fro... tb_user" />
+            <marker date="1516721988322" expanded="true" signature="1808:1856" ph="SELECT email... tb_user" />
+            <marker date="1516721988322" expanded="true" signature="2851:2872" ph="select * fro... TB_USER" />
+            <marker date="1516721988322" expanded="true" signature="3281:3305" ph="select * fro... TB_MESSAGE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -802,17 +841,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/modules/user/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="126" column="10" lean-forward="true" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/modules/user/thankyou.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="454">
+          <caret line="189" column="54" lean-forward="false" selection-start-line="189" selection-start-column="54" selection-end-line="189" selection-end-column="54" />
+          <folding>
+            <element signature="e#110#134#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

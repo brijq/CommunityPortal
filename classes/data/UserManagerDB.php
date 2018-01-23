@@ -8,7 +8,7 @@ class UserManagerDB
 {
     public static function fillUser($row){
         $user=new User();
-        $user->id=$row["id"];
+        $user->id=$row["userid"];
         $user->name=$row["name"];
         $user->email=$row["email"];
         $user->password=$row["password"];
@@ -75,7 +75,7 @@ class UserManagerDB
         $conn=DBUtil::getConnection();
         $sql="call procSaveUser(?,?,?,?,?,?,?,?,?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("isssissss", $user->id,$user->name, $user->email,$user->password,$user->age,$user->mobilenumber,$user->country,$user->city,$user->address);
+        $stmt->bind_param("isssissss", $user->userid,$user->name, $user->email,$user->password,$user->age,$user->mobilenumber,$user->country,$user->city,$user->address);
         $stmt->execute();
         if($stmt->errno!=0){
             printf("Error: %s.\n",$stmt->error);

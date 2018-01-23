@@ -187,7 +187,7 @@ if(isset($_REQUEST["submitted"])){
                     <input type="text" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="address" id="address"  required>
                 </div>
 
-                <input type="hidden" name="submitted" value="1"><input type="submit" name="Register" value="Register">
+                <input type="hidden" name="submitted" ><input type="submit" name="Register" value="Register">
             </div>
         </div>
     </form>
