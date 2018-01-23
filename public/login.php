@@ -11,13 +11,11 @@ use classes\business\UserManager;
 
 //include '../classes/business/UserManager.php';
 
-$formerror="";
-
 $email="";
 $password="";
 
 $email_err = "";
-$password_err = "";
+
 
 /**
  * @params string $email
