@@ -33,20 +33,18 @@ if(isset($_REQUEST["submitted"])){
     if(empty($_REQUEST['password'])){
         $password_err = "Please enter a password.";
     } elseif(strlen(trim($_REQUEST['password'])) < 6){
-        $password_err = "Password must have at least 6 characters.";
+        $password_error = "Password must have at least 6 characters.";
     } else{
         $password = trim($_REQUEST['password']);
     }
 
     $existuser=$UM->getUserByEmailPassword($email,$password);
     if(isset($existuser)){
-        $formerror = "user exist";
         session_start();
         $_SESSION['email']=$email;
         header("Location: home.php");
     } else {
-        print "invalid user";
-        $formerror = "Invalid User Name or Password";
+        $formerror = "Invalid User Email or Password";
     }
 }
 
@@ -113,6 +111,7 @@ if(isset($_REQUEST["submitted"])){
                         </div>
 
                         <?php if(isset($password_err)){ ?><div class="alert alert-danger" role="alert"> <?php echo $password_err; ?> </div><?php } ?>
+                        <?php if(isset($password_error)){ ?><div class="alert alert-danger" role="alert"> <?php echo $password_error; ?> </div><?php } ?>
                         <?php if(isset($formerror)){ ?><div class="alert alert-danger" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
 
                         <form name="myForm" method="post">
