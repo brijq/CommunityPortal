@@ -2,68 +2,31 @@
 /**
  * This is the register .php page
  */
-session_start();
-require_once '../../includes/autoload.php';
 
-use classes\util\DBUtil;
-use classes\business\UserManager;
-use classes\entity\User;
+require_once ('../../../classes/util/connect.php');
 
-$_SESSION['formerror']='';
+    if(isset($_POST) & !empty($_POST)) {
+        print_r($_POST);
+        $name = mysqli_real_escape_string($connection,$_POST['name']);
+        $email = mysqli_real_escape_string($connection,$_POST["email"]);
+        $password = mysqli_real_escape_string($connection,$_POST["password"]);
+        $age = mysqli_real_escape_string($connection,$_POST["age"]);
+        $mobilenumber = mysqli_real_escape_string($connection,$_POST["mobilenumber"]);
+        $country = mysqli_real_escape_string($connection,$_POST["country"]);
+        $city = mysqli_real_escape_string($connection,$_POST["city"]);
+        $address = mysqli_real_escape_string($connection,$_POST["address"]);
 
-$name="";
-$password="";
-//$confirmpassword="";
-$email="";
-$age='';
-$mobilenumber='';
-$country='';
-$city='';
-$address='';
+        $CreateSql = "INSERT INTO `tb_user` ( name , email,password,age,mobilenumber,country,city,address)VALUES('$name','$email','$password','$age','$mobilenumber','$country','$city','$address')";
 
-if(isset($_REQUEST["submitted"])){
-    $name=$_REQUEST["name"];
-    $email=$_REQUEST["email"];
-    $password=$_REQUEST["password"];
-    $age=$_REQUEST["age"];
-    $mobilenumber=$_REQUEST["mobilenumber"];
-    $country=$_REQUEST["country"];
-    $city=$_REQUEST["city"];
-    $address=$_REQUEST["address"];
+        $res = mysqli_query($connection, $CreateSql);
 
-
-
-    if($name!='' && $password !='' && $email!='' && $age!="" && $mobilenumber!="" && $country!="" && $city!="" && $address!="") {
-        $UM = new UserManager();
-        $user = new User();
-        $user->name = $name;
-        $user->email = $email;
-        $user->password = $password;
-        $user-> age = $age;
-        $user-> mobilenumber = $mobilenumber;
-        $user-> country = $country;
-        $user-> city = $city;
-        $user->address = $address;
-
-        $existuser = $UM->getUserByEmail($email);
-
-
-        if (!isset($existuser)) {
-            // Save the Data to Database
-            $UM->saveUser($user);
-            header("Location:thankyou.php");
+        if ($res) {
+            $smsg =  "Successfully inserted data";
         } else {
-            $formerror = "Username already taken, Please Choose another email and username";
+            $fmsg = "failed to insert data";
         }
-
     }
-}
-
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -118,10 +81,11 @@ if(isset($_REQUEST["submitted"])){
 <div class="container">
     <div class="row">
         <form name="myForm" method="post" class="form-group" action="register.php">
-            <?php if(isset($formerror)){ ?><div class="alert alert-danger" role="alert"> <?php echo $formerror; ?> </div><?php } ?>
             <div class="col">
                 <h1> Sign Up Now And Join Our Largest Network Across More than 100,000 Connections All Over The World</h1>
             </div>
+            <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+            <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
     </div>
 
     <form>
@@ -147,20 +111,16 @@ if(isset($_REQUEST["submitted"])){
                 </div>
 
                 <div class="form-group">
-                    <label for="Password" style="margin-left:20px">Password</label>
-                    <input type="password" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="password" id="password" placeholder="Enter password" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="Password" style="margin-left:20px">Confirm Password</label>
-                    <input type="password" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="Confirmpassword" id="Confirmpassword" placeholder="Enter password" required>
-                </div>
-
-                <div class="form-group">
                     <label for="Email" style="margin-left:20px">Email address</label>
                     <input type="email" class="form-control"  style="margin-bottom: 10px;  margin-left:20px"name="email" id="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
                     <small id="emailHelp" class="form-text text-muted"  style="margin-bottom: 40px;  margin-left:20px" >We'll never share your email with anyone else.</small>
                 </div>
+
+                <div class="form-group">
+                    <label for="Password" style="margin-left:20px">Password</label>
+                    <input type="password" class="form-control"  style="margin-bottom: 10px;  margin-left:20px" name="password" id="password" placeholder="Enter password" required>
+                </div>
+
 
                 <div class="form-group">
                     <label for="age" style="margin-left:20px">Age</label>
