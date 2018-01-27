@@ -1,5 +1,5 @@
 <?php
-
+$searchmsg = "";
 require_once ('../../../classes/util/connect.php');
 
     if(isset($_POST['submit'])) {
@@ -8,22 +8,26 @@ require_once ('../../../classes/util/connect.php');
             if (preg_match("/^[A-Za-z]+/", $_POST['name'])) {
                 $name = $_POST['name'];
                 //-query  the database table
-                $sql = "SELECT userid, name FROM tb_user WHERE name LIKE '%" . $name . "%'";
+                $sql = "SELECT userid, name ,email,age,mobilenumber,country,city,address FROM tb_user WHERE name LIKE '%" . $name ."%'";
                 //-run  the query against the mysql query function
                 $result = mysqli_query($connection, $sql);
 
                 //-create  while loop and loop through result set
                 while ($row = mysqli_fetch_array($result)) {
-                    $FirstName = $row['FirstName'];
-                    $LastName = $row['LastName'];
-                    $ID = $row['ID'];
+                    $name = $row['name'];
+                    $email = $row['email'];
+                    $age = $row['age'];
+                    $mobilenumber = $row['mobilenumber'];
+                    $country = $row['country'];
+                    $city = $row['city'];
+                    $address = $row['address'];
+                    $userid = $row['userid'];
 
-                    echo "<ul>\n";
-                    echo "<li>" . "<a  href=\"search.php?id=$ID\">" . $name . " </a></li>\n";
-                    echo "</ul>";
+                    $abc =  "<div class=\"col-lg-3\"> <ul style='text-align: center ; margin-top: 80px;'> <li> <h3 style=\"margin-left: 100px; color: #2aabd2\"><strong><a  href=\"search.php?id=$userid\"> <h3 style='color: #0e90d2; margin-top: 30px;'>name</h3>" . $name  ." <h3 style='color: #0e90d2; margin-top: 30px;'>email</h3>". $email . " <h3 style='color: #0e90d2; margin-top: 30px;'>age</h3>". $age . "<h3 style='color: #0e90d2; margin-top: 30px;'>mobilenumber</h3> ". $mobilenumber . " <h3 style='color: #0e90d2; margin-top: 30px;'>country</h3>". $country . "<h3 style='color: #0e90d2; margin-top: 30px;'>city</h3>". $city . "  <h3 style='color: #0e90d2; margin-top: 30px;'>address</h3>". $address . "  </a></strong></h3></li> </ul></div>";
+
                 }
             } else {
-                echo "<p>Please enter a search query</p>";
+                $searchmsg = "<p>Please enter a search query</p>";
             }
         }
     }
@@ -32,22 +36,6 @@ require_once ('../../../classes/util/connect.php');
 
 ?>
 
-<!DOCTYPE  HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
-	<html>
-	  <head>
-    	    <meta  http-equiv="Content-Type" content="text/html;  charset=iso-8859-1">
-    	    <title>Search  Contacts</title>
-    	  </head>
-	  <p><body>
-    	    <h3>Search  Contacts Details</h3>
-   	    <p>You  may search either by first or last name</p>
-    <form  method="post" action="search.php?go"  id="searchform">
-   	      <input  type="text" name="name">
-   	      <input  type="submit" name="submit" value="Search">
-        </form>
-	  </body>
-</html>
-</p>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +43,7 @@ require_once ('../../../classes/util/connect.php');
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../css/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.css">
-    <title>Developers Community-List User Page</title>
+    <title>Developers Community-Search Contacts</title>
 </head>
 <body>
 
@@ -99,115 +87,21 @@ require_once ('../../../classes/util/connect.php');
 </nav>
 
 <!-- Body -->
-<div class="row">
-    <div class="col-lg-3">
-        <img src="./handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Johnny Ive</strong></h3>
-        <h5 style="margin-left: 100px"><strong>Northumbria University</strong></h5>
-    </div>
+<div style="margin-bottom: 800px">
+    <h2 style="text-align: center">Please enter a search query</h2>
+    <h3 style="text-align: center">Search  Contacts Details</h3>
+    <p style="text-align: center">You  may search either by first or last name</p>
+    <form style="text-align: center"  method="post" action="search.php?go"  id="searchform">
+        <input style="text-align: center" type="text" name="name">
+        <input style="text-align: center" type="submit" name="submit" value="Search">
+    </form>
 
-    <div class="col-lg-3">
-        <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Melissa Tan</strong></h3>
-        <h5 style="margin-left: 100px"><strong>London University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Johnny Ive</strong></h3>
-        <h5 style="margin-left: 100px"><strong>Northumbria University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Melissa Tan</strong></h3>
-        <h5 style="margin-left: 100px"><strong>London University</strong></h5>
-    </div>
+    <?php if(isset($abc)){ ?><div style = "text-align: center;" role="alert"> <?php echo $abc; ?> </div><?php } ?>
+    <?php if(!isset($abc)){ ?><div style = "text-align: center;" class="alert alert-success" role="alert"> <?php echo "No Result Found"; ?> </div><?php } ?>
+    <?php if(!isset($searchmsg)){ ?><div style = "text-align: center;" class="alert alert-danger" role="alert"> <?php echo $searchmsg; ?> </div><?php } ?>
 </div>
 
-<div class="row">
-    <div class="col-lg-3">
-        <img src="./handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Johnny Ive</strong></h3>
-        <h5 style="margin-left: 100px"><strong>Northumbria University</strong></h5>
-    </div>
 
-    <div class="col-lg-3">
-        <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Melissa Tan</strong></h3>
-        <h5 style="margin-left: 100px"><strong>London University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Johnny Ive</strong></h3>
-        <h5 style="margin-left: 100px"><strong>Northumbria University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Melissa Tan</strong></h3>
-        <h5 style="margin-left: 100px"><strong>London University</strong></h5>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-3">
-        <img src="./handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Johnny Ive</strong></h3>
-        <h5 style="margin-left: 100px"><strong>Northumbria University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Melissa Tan</strong></h3>
-        <h5 style="margin-left: 100px"><strong>London University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Johnny Ive</strong></h3>
-        <h5 style="margin-left: 100px"><strong>Northumbria University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Melissa Tan</strong></h3>
-        <h5 style="margin-left: 100px"><strong>London University</strong></h5>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-3">
-        <img src="./handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Johnny Ive</strong></h3>
-        <h5 style="margin-left: 100px"><strong>Northumbria University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Melissa Tan</strong></h3>
-        <h5 style="margin-left: 100px"><strong>London University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./handsome-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Johnny Ive</strong></h3>
-        <h5 style="margin-left: 100px"><strong>Northumbria University</strong></h5>
-    </div>
-
-    <div class="col-lg-3">
-        <img src="./pretty-avatar.jpg" class="img-thumbnail"  style="margin-bottom: 10px; margin-top: 50px ; margin-left: 10px" alt="Cinque Terre" width="304" height="236">
-        <h3 style="margin-left: 100px; color: #2aabd2"><strong>Melissa Tan</strong></h3>
-        <h5 style="margin-left: 100px"><strong>London University</strong></h5>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col">
-        <a href="#" style="margin-top: 50px; color: #2aabd2; margin-left: 710px; margin-bottom: 30px; font-size: 40px">Load More...</a>
-    </div>
-</div>
 
 
 <!--Footer-->
