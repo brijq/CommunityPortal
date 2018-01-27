@@ -8,10 +8,11 @@ require_once ('../../../classes/util/connect.php');
             if (preg_match("/^[A-Za-z]+/", $_POST['name'])) {
                 $name = $_POST['name'];
                 //-query  the database table
-                $sql = "SELECT userid, name ,email,age,mobilenumber,country,city,address FROM tb_user WHERE name LIKE '%" . $name ."%'";
+                $sql = "SELECT userid, name ,email,age,mobilenumber,country,city,address FROM tb_user WHERE name LIKE '%" . $name . "%'";
                 //-run  the query against the mysql query function
                 $result = mysqli_query($connection, $sql);
 
+                /**
                 //-create  while loop and loop through result set
                 while ($row = mysqli_fetch_array($result)) {
                     $name = $row['name'];
@@ -23,14 +24,17 @@ require_once ('../../../classes/util/connect.php');
                     $address = $row['address'];
                     $userid = $row['userid'];
 
-                    $abc =  "<div class=\"col-lg-3\"> <ul style='text-align: center ; margin-top: 80px;'> <li> <h3 style=\"margin-left: 100px; color: #2aabd2\"><strong><a  href=\"search.php?id=$userid\"> <h3 style='color: #0e90d2; margin-top: 30px;'>name</h3>" . $name  ." <h3 style='color: #0e90d2; margin-top: 30px;'>email</h3>". $email . " <h3 style='color: #0e90d2; margin-top: 30px;'>age</h3>". $age . "<h3 style='color: #0e90d2; margin-top: 30px;'>mobilenumber</h3> ". $mobilenumber . " <h3 style='color: #0e90d2; margin-top: 30px;'>country</h3>". $country . "<h3 style='color: #0e90d2; margin-top: 30px;'>city</h3>". $city . "  <h3 style='color: #0e90d2; margin-top: 30px;'>address</h3>". $address . "  </a></strong></h3></li> </ul></div>";
+                    $abc = "<div class=\"col-lg-3\"> <ul style='text-align: center ; margin-top: 80px;'> <li> <h3 style=\"margin-left: 100px; color: #2aabd2\"><strong><a  href=\"search.php?id=$userid\"> <h3 style='color: #0e90d2; margin-top: 30px;'>name</h3>" . $name . " <h3 style='color: #0e90d2; margin-top: 30px;'>email</h3>" . $email . " <h3 style='color: #0e90d2; margin-top: 30px;'>age</h3>" . $age . "<h3 style='color: #0e90d2; margin-top: 30px;'>mobilenumber</h3> " . $mobilenumber . " <h3 style='color: #0e90d2; margin-top: 30px;'>country</h3>" . $country . "<h3 style='color: #0e90d2; margin-top: 30px;'>city</h3>" . $city . "  <h3 style='color: #0e90d2; margin-top: 30px;'>address</h3>" . $address . "  </a></strong></h3></li> </ul></div>";
 
                 }
+                 **/
             } else {
                 $searchmsg = "<p>Please enter a search query</p>";
             }
+
         }
     }
+
 
 
 
@@ -96,7 +100,40 @@ require_once ('../../../classes/util/connect.php');
         <input style="text-align: center" type="submit" name="submit" value="Search">
     </form>
 
-    <?php if(isset($abc)){ ?><div style = "text-align: center;" role="alert"> <?php echo $abc; ?> </div><?php } ?>
+    <h3 style="text-align: center">Results</h3>
+
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>E-mail</th>
+                <th>Age</th>
+                <th>Mobile Number</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Address</th>
+            </tr>
+            <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+                ?>
+                <tr>
+                    <td>1</td>
+                    <td><?php echo $row['name'] ?></td>
+                    <td><?php echo $row['email'] ?></td>
+                    <td><?php echo $row['age'] ?></td>
+                    <td><?php echo $row['mobilenumber'] ?></td>
+                    <td><?php echo $row['country'] ?></td>
+                    <td><?php echo $row['city'] ?></td>
+                    <td><?php echo $row['address'] ?></td>
+                </tr>
+                <?php
+            }
+            ?>
+        </table>
+    </div>
+
+
     <?php if(!isset($abc)){ ?><div style = "text-align: center;" class="alert alert-success" role="alert"> <?php echo "No Result Found"; ?> </div><?php } ?>
     <?php if(!isset($searchmsg)){ ?><div style = "text-align: center;" class="alert alert-danger" role="alert"> <?php echo $searchmsg; ?> </div><?php } ?>
 </div>
