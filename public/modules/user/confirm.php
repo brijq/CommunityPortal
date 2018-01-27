@@ -1,12 +1,19 @@
-<?php echo '
+<?php
+require_once ('../../../classes/util/connect.php');
+$passkey = $_GET['passkey'];
+$sql = "UPDATE tb_user SET code=NULL WHERE code='$passkey'";
+$result = mysqli_query($connection ,$sql);
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
-    <title>Developers Community-Registration Page</title>
+    <link rel="stylesheet" href="../../css/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.css">
+    <title>Developers Community-Search Contacts</title>
 </head>
 <body>
 
@@ -49,18 +56,20 @@
     </div>
 </nav>
 
-<form class="form-signin" method="POST">
-        <h2 class="form-signin-heading">Forgot Password</h2>
-        <div class="input-group">
-	  <span class="input-group-addon" id="basic-addon1">@</span>
-	  <input type="text" name="email" class="form-control" placeholder="Email" required>
-	</div>
-	<br />
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Forgot Password</button>
-        <a class="btn btn-lg btn-primary btn-block" href="login.php">Login</a>
-      </form>
+<div style="text-align: center">
+    <?php
+    if($result)
+    {
+        echo '<div>Your account is now active. You may now <a href="../../login.php">Log in</a></div>';
+    }
+    else
+    {
+        echo "Some error occur.";
+    }
+    ?>
+</div>
 
-  
+
 <!--Footer-->
 
 <div class="rectangle" style="width: 1700px; height: 200px">
@@ -101,7 +110,16 @@
     </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
-'
-?>

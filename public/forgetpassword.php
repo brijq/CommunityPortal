@@ -16,7 +16,8 @@ if(isset($_POST) & !empty($_POST)){
         $to = $r['email'];
         $subject = "Your Recovered Password";
 
-        $message = "Your password have been recovered: " . $password . "Please do not lose your password". "This is a auto generated email";
+        $message = "Your password have been recovered: " . $password . "Please do not lose your password" ;
+        $message .= " ***This is a auto generated email*** ";
         $headers = "From : communityportal@brian.com";
         if(mail($to, $subject, $message, $headers)){
             $smsg = "Your Password has been sent to your email id";

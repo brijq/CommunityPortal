@@ -5,27 +5,44 @@
 
 require_once ('../../../classes/util/connect.php');
 
-    if(isset($_POST) & !empty($_POST)) {
-        print_r($_POST);
-        $name = mysqli_real_escape_string($connection,$_POST['name']);
-        $email = mysqli_real_escape_string($connection,$_POST["email"]);
-        $password = mysqli_real_escape_string($connection,$_POST["password"]);
-        $age = mysqli_real_escape_string($connection,$_POST["age"]);
-        $mobilenumber = mysqli_real_escape_string($connection,$_POST["mobilenumber"]);
-        $country = mysqli_real_escape_string($connection,$_POST["country"]);
-        $city = mysqli_real_escape_string($connection,$_POST["city"]);
-        $address = mysqli_real_escape_string($connection,$_POST["address"]);
+if(isset($_POST) & !empty($_POST)) {
+    print_r($_POST);
+    $name = mysqli_real_escape_string($connection,$_POST['name']);
+    $email = mysqli_real_escape_string($connection,$_POST["email"]);
+    $password = mysqli_real_escape_string($connection,$_POST["password"]);
+    $age = mysqli_real_escape_string($connection,$_POST["age"]);
+    $mobilenumber = mysqli_real_escape_string($connection,$_POST["mobilenumber"]);
+    $country = mysqli_real_escape_string($connection,$_POST["country"]);
+    $city = mysqli_real_escape_string($connection,$_POST["city"]);
+    $address = mysqli_real_escape_string($connection,$_POST["address"]);
+    $code = md5(uniqid(rand()));
 
-        $CreateSql = "INSERT INTO `tb_user` ( name , email,password,age,mobilenumber,country,city,address)VALUES('$name','$email','$password','$age','$mobilenumber','$country','$city','$address')";
 
-        $res = mysqli_query($connection, $CreateSql);
+    $CreateSql = "INSERT INTO `tb_user` ( name , email,password,age,mobilenumber,country,city,address,code)VALUES('$name','$email','$password','$age','$mobilenumber','$country','$city','$address','$code')";
 
-        if ($res) {
-            $smsg =  "Successfully inserted data";
-        } else {
-            $fmsg = "failed to insert data";
+    $res = mysqli_query($connection, $CreateSql);
+
+    if ($res) {
+        //$r = mysqli_fetch_assoc($res);
+        $to = $email;
+        $subject = "SignUp | Verification";
+
+        // Return Success - Valid Email
+        $message = 'Your account has been made, <br /> please verify it by clicking the activation link that has been send to your email.';
+        $message .= "http://localhost:8080/CommunityPortalAdmin/public/modules/user/confirm.php?passkey=$code";
+        $message .= "*** This is an auto generated Email*** ";
+        $headers = "From : communityportal@brian.com";
+
+        $smsg =  "Successfully inserted data";
+        if(mail($to, $subject, $message, $headers)) {
+            $smsg = "Your Confirmation link have been send to your email";
+        }else{
+            $fmsg =  "Please Try Again";
         }
+    } else {
+        $fmsg = "failed to insert data";
     }
+}
 ?>
 
 <!DOCTYPE html>
