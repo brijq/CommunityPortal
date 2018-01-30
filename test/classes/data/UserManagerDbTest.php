@@ -14,7 +14,7 @@ class UserManagerDBTest extends TestCase{
     public function testfillUser(){
 
         $expected =['1','Brian','brijq91@gmail.com','1234','28','12345678','Singapore' , 'Singapore', 'Blk 123, Bukit Merah Road'] ;
-        $this->assertSame($expected, ['1','Brian','brijq91@gmail.com','1234','28','12345678','Singapore' , 'Singapore', 'Blk 123, Bukit Merah Road'] );
+        $this->assertSame($expected, ['1','Brian','brijq91@gmail.com','1234','28','12345678','Singapore' , 'Singapore', 'Blk 123, Bukfwrgit Merah Road'] );
 
     }
 
